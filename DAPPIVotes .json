@@ -1,0 +1,80 @@
+{
+"udl-SC_version" : "1.0", 
+"name" : "IVotes ", 
+"creation_date":"4/2/2022",
+"Business Perspective": {
+	"Legal":{ "name": "Ricardian contract" , "type":"Ricardian contract" ,"link":"https://www.barclays.co.uk/" "description":"Independent service quality survey results"},
+	"QOS":{ "service level": { "latency": "1ms", "gasConsomation": "105", "ContractGasPrice":"52505"},
+			"Princing" :{" Gaslimit": "80000000", "tokenPrice": "234.56 USD"},
+			"security" : {"signed": "yes", "tested": "yes", "link":"https://github.com/cleanunicorn/karl", "description" : "Karl by Daniel Luca is a monitor for smart contracts that checks for security vulnerabilities using the Mythril detection engine. It can be used to monitor the Ethereum blockchain for newly deployed vulnerable smart contracts in real-time. It eliminates false positives by running candidate contracts in a virtual copy of the blockchain. Trust us, Karl discovers a lot of interesting gems every day."}
+
+	},
+	"participants" : {
+		"provider":"0xfe1bD11cD131C02f31A8b213651A8358FA1ab7a8",
+		"FutureUserType":"smart contract"
+	},
+	"sc characteristics ":{
+		"documentational characteristics":{ "used compiler":"", 
+		    "usedRessources":"", 
+		    "abi" : "",
+			"deployed byte code" : "",
+			"description" : "",
+			"hash":"", 
+			"metadata":""},
+	    "common characteristics":{"type":"",
+			"category":"", "updateDate":"","state":"","version":"", "initialBalance ": ""
+	      ,"creationDate":"", "lifeCycle":""}}},
+
+"technical Perspective":{ "blockhain characteristics ":{ "name":"Ethereum",  "type":"public", "consensus":"proof of stacke","currency":"ETH"},
+"Protocol information":{ "adress":"0xf8e81D47203A594245E36C48e151709F0C19fBe8"}
+},
+"operationalPerspective":{
+	"Functions" : [
+	{"name": "getVotes",
+	"Type": "view",
+	"scope" : "external",
+	"description": "the current amount of votes that `account` has.",
+	"inputs":[{"name": "account", "Type": "address" }],
+	"outputs": [{"name": "_int" , "Type": "uint256" }]
+	},
+	{"name": "getPastVotes",
+	"Type": "view",
+	"scope" : "external",
+	"description": "Returns the amount of votes that `account` had at the end of a past block (`blockNumber`).",
+	"inputs":[{"name": "account", "Type": "address" },{"name": "blockNumber", "Type": "uint256" }],
+	"outputs": [{"name": "_int" , "Type": "uint256" }]
+	},
+	{"name": "getPastTotalSupply(",
+	"Type": "view",
+	"scope" : "external",
+	"description": "Returns the total supply of votes available at the end of a past block (`blockNumber`).",
+	"inputs":[{"name": "blockNumber", "Type": "uint256" }],
+	"outputs": [{"name": "_int" , "Type": "uint256" }]
+	},
+	{"name": "ugetPastTotalSupply",
+	"Type": "view",
+	"scope" : "external",
+	"description": "Returns the total supply of votes available at the end of a past block (`blockNumber`)."
+	"inputs":[{"name": "blockNumber", "Type": "uint256" }],
+	"outputs": [{"name": "_int" , "Type": "uint256" }]
+	},
+	{"name": "delegates",
+	"Type": "view",
+	"scope" : "external",
+	"description": "Returns the delegate that `account` has chosen.",
+	"inputs":[{"name": "account", "Type": "address " }],
+	"outputs": [{"name": "account", "Type": "address " }]
+	}],
+	"Events": [
+	{"name": "DelegateVotesChanged",
+	"Type": "",
+	"description": "",
+	"outputs": [{"name": "delegator", "Type": "address","is_indexed" : true},{"name": "fromDelegate", "Type": "address","is_indexed" : true},{"name": "toDelegate", "Type": "address","is_indexed" : true}]
+	},
+	{"name": "DelegateChanged",
+	"Type": "",
+	"description": "",
+	"outputs": [{"name": "delegate", "Type": "address","is_indexed" : true},{"name": "previousBalance", "Type": "uint256","is_indexed" : true},{"name": "newBalance", "Type": "uint256","is_indexed" : true}]
+	}]
+}
+}

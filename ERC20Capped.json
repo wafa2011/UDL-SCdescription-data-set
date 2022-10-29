@@ -1,0 +1,42 @@
+{
+"UDL-SC_version" : "1.0",  
+"name" : "ERC20CappedMock", 
+"creation_date":"",
+"Business Perspective": {
+    "Legal":{ "name": "" , "type":"" ,"link":"","description" : ""},
+	"QOS":{ "service level": { "latency": "1ms", "gasConsomation": "152137", "ContractGasPrice":"152137"},
+			"Princing" :{" Gaslimit": "266600", "tokenPrice": "234.56 USD"},
+			"security" : {"signed": "", "tested": "", "link":"","description" : ""}
+	},
+	"participants" : {
+		"provider":"0x0A098Eda01Ce92ff4A4CCb7A4fFFb5A43EBC70DC",
+	     "FutureUserType":"smart contract"
+		 },
+	"sc characteristics ":{
+		"documentational characteristics":{ "used compiler":"", 
+		    "usedRessources":"", 
+		    "abi" : "",
+			"deployed byte code" : "",
+			"description" : "",
+			"hash":"", 
+			"metadata":""},
+	    "common characteristics":{"type":"",
+			"category":"", "updateDate":"","state":"","version":"", "initialBalance ": ""
+	      ,"creationDate":"", "lifeCycle":""}}},
+
+"technical Perspective":{ "blockhain characteristics ":{ "name":"",  "type":"", "consensus":"","currency":""},
+"Protocol information":{ "adress":""}
+},
+"operationalPerspective":{
+	"Functions" : [
+	{"name": "mint",
+	"Type": "",
+	"scope" : "public",
+	"description": "",
+	"inputs":[{"name": " to" , "Type": "address" },{"name": "tokenId" , "Type": "uint256" }],
+	"outputs": [{"name": " to" , "Type": "address" },{"name": "tokenId" , "Type": "uint256" }]
+	}],
+	"Events": [
+	]
+}
+}

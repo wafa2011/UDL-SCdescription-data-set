@@ -1,0 +1,89 @@
+{
+"UDL-SC_version" : "", 
+"name" : "", 
+"creation_date":"",
+"Business Perspective": {
+	"Business Perspective": {
+	"Legal":{ "name": "state" , "type":"gouvernemental" ,"link":"https://www.federalreserve.gov/","description" : "The Federal Reserve System is the central bank of the United States."},
+	"QOS":{ "service level": { "latency": "6ms", "gasConsomation": "1064289 ", "ContractGasPrice":"1064289 "},
+			"Princing" :{" Gaslimit": "80000000 ", "tokenPrice": "234.56 USD"},
+			"security" : {"signed": "yes", "tested": "yes", "link":"https://mariachris.github.io/Pubs/FSE-2020-Harvey.pdf", "description":"A state-of-the-art greybox fuzzer for Ethereum smart contracts. It integrates various novel techniques for finding bugs faster and more reliably."}
+	},
+	"participants" : {
+		"provider":"0x5B38Da6a701c568545dCfcB03FcB875f56beddC4",
+		"FutureUserType":""
+	},
+	"sc characteristics ":{
+		"documentational characteristics":{ "used compiler":"", 
+		    "usedRessources":"", 
+		    "abi" : "",
+			"deployed byte code" : "",
+			"description" : "",
+			"hash":"", 
+			"metadata":""},
+	    "common characteristics":{"type":"",
+			"category":"", "updateDate":"","state":"","version":"", "initialBalance ": ""
+	      ,"creationDate":"", "lifeCycle":""}}},
+
+"technical Perspective":{ "blockhain characteristics ":{ "name":"Ethereum",  "type":"public", "consensus":"proof of stacke","currency":"ETH"},
+"Protocol information":{ "adress":"0x5B38Da6a701c568545dCfcB03FcB875f56beddC4"}
+},
+"operationalPerspective":{
+	"Functions" : [
+	{"name": "name",
+	"Type": "view",
+	"scope" : "public",
+	"description": "function that return the name of the token ",
+	"inputs":[],
+	"outputs": [{"name": "_name" , "Type": "string" }]
+	},
+	{"name": "symbol",
+	"Type": "view",
+	"scope" : "public",
+	"description": "function that return the symbol of the token",
+	"inputs":[],
+	"outputs": [{"name": "_symbol" , "Type": "string" }]
+	},
+	{"name": "decimals",
+	"Type": "view",
+	"scope" : "public",
+	"description": "Returns the number of decimals used to get its user representation.",
+	"inputs":[],
+	"outputs": [{"name": "18" , "Type": "uint8" }]
+	},
+	{"name": "totalSupply",
+	"Type": "view",
+	"scope" : "public",
+	"description": "get total Supply",
+	"inputs":[],
+	"outputs": [{"name": "_totalSupply" , "Type": "uint256" }]
+	},
+	{"name": "balanceOf",
+	"Type": "view",
+	"scope" : "public",
+	"description": "",
+	"inputs":[{"name": "account", "Type": "address " }],
+	"outputs": [{"name": "_balances[account]" , "Type": "uint256" }]
+	},
+	{"name": "transfer",
+	"Type": "",
+	"scope" : "public",
+	"description": "transfer tokens",
+	"inputs":[{"name": "to", "Type": "address " },{"name": "amount", "Type": "uint256 " }],
+	"outputs": [{"name": "_bool" , "Type": "bool" }]
+	},
+	{"name": "",
+	"Type": "",
+	"scope" : "",
+	"description": "",
+	"inputs":[{"name": "", "Type": "" }],
+	"outputs": [{"name": "" , "Type": "" }]
+	}],
+	"Events": [
+	{"name": "",
+	"Type": "",
+	"description": "",
+	"outputs": [{"name": "", "Type": "","is_indexed" : true}]
+	}]
+}
+}
