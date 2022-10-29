@@ -1,0 +1,97 @@
+"UDL-SC_version" : "1.0", 
+"name" : "AccessControlEnumerable", 
+"creation_date":"11/03/2018",
+"Business Perspective": {
+    "Legal":{ "name": "" , "type":"" ,"link":"","description" : ""},
+	"QOS":{ "service level": { "latency": "1ms", "gasConsomation": "1185924  ", "ContractGasPrice":"1185924  "},
+			"Princing" :{" Gaslimit": "266600", "tokenPrice": "234.56 USD"},
+			"security" : {"signed": "", "tested": "", "link":"","description" : ""}
+	},
+	"participants" : {
+		"provider":"0x5c6B0f7Bf3E7ce046039Bd8FABdfD3f9F5021678",
+		"FutureUserType":"both"
+	},
+	"sc characteristics ":{
+		"documentational characteristics":{ "used compiler":"0.4.24+commit.1df8f40c", 
+		    "usedRessources":"", 
+		    "abi" : ,
+			"deployed byte code" : ,
+			"description" : "transfer token",
+			"hash":"", 
+			"metadata":""},
+	    "common characteristics":{"type":"Application logic contracts (ALCs)",
+			"category":"static", "updateDate":"","state":"mutable","version":"solidity ^0.4.24", "initialBalance ": "0"
+	      ,"creationDate":"7/1/2019", "lifeCycle":"ready"}}},
+
+"technical Perspective":{ "blockhain characteristics ":{ "name":"Ethereum",  "type":"public", "consensus":"proof of stacke","currency":"ETH"},
+"Protocol information":{ "adress":"0xd8b934580fcE35a11B58C6D73aDeE468a2833fa8"}
+},
+"operationalPerspective":{
+		"Functions" : [
+	{"name": "_checkRole",
+	"Type": "view",
+	"scope" : "internal",
+	"description": "* @dev Revert with a standard message if `_msgSender()` is missing `role`. * Overriding this function changes the behavior of the {onlyRole} modifier.",
+	"inputs":[{"name": "role", "Type": "bytes32" },{"name": " account", "Type": "address" }],
+	"outputs": []
+	},
+	{"name": "getRoleAdmin",
+	"Type": "view",
+	"scope" : "public",
+	"description": "* @dev Returns the admin role that controls `role`. See {grantRole} and * {revokeRole}.",
+	"inputs":[{"name": "role", "Type": "bytes32" }],
+	"outputs": [{"name": "role", "Type": "bytes32" }]
+	},
+	{"name": "grantRole",
+	"Type": "virtual",
+	"scope" : "public",
+	"description": " @dev Revokes `role` from the  account."
+	"inputs":[{"name": "role", "Type": "bytes32" },{"name": " account", "Type": "address" }],
+	"outputs": [{"name": "role", "Type": "bytes32" },{"name": " account", "Type": "address" }]
+	},
+	{"name": "revokeRole",
+	"Type": "virtual",
+	"scope" : "public",
+	"description": "  * @dev Grants `role` to `account`.."
+	"inputs":[{"name": "role", "Type": "bytes32" },{"name": " account", "Type": "address" }],
+	"outputs": [{"name": "role", "Type": "bytes32" },{"name": " account", "Type": "address" }]
+	},
+	{"name": "renounceRole",
+	"Type": "virtual",
+	"scope" : "internal",
+	"description": " @dev Revokes `role` from the calling account."
+	"inputs":[{"name": "role", "Type": "bytes32" },{"name": " account", "Type": "address" }],
+	"outputs": []
+	},
+	{"name": "_setupRole",
+	"Type": "virtual",
+	"scope" : "internal",
+	"description": "If `account` had not been already granted `role`, emits a {RoleGranted} * event. Note that unlike {grantRole}, this function doesn't perform any * checks on the calling account. *",
+	"inputs":[{"name": "role", "Type": "bytes32" },{"name": " account", "Type": "address" }],
+	"outputs": []
+	},
+	{"name": "_setRoleAdmin",
+	"Type": "virtual",
+	"scope" : "internal",
+	"description": "* @dev Sets `adminRole` as ``role``'s admin role.",
+	"inputs":[{"name": "role", "Type": "bytes32" },{"name": "adminRole", "Type": "bytes32" }],
+	"outputs": []
+	},
+	{"name": "_grantRole",
+	"Type": "virtual",
+	"scope" : "internal",
+	"description": " @dev Grants `role` to `account`.",
+	"inputs":[{"name": "role", "Type": "bytes32" },{"name": " account", "Type": "address" }],
+	"outputs": []
+	},
+	{"name": "_revokeRole",
+	"Type": "virtual",
+	"scope" : "internal",
+	"description": "@dev Revokes `role` from `account`. ** Internal function without access restriction.",
+	"inputs":[{"name": "role", "Type": "bytes32" },{"name": " account", "Type": "address" }],
+	"outputs": []
+	}],
+	"Events": [
+	]
+}
+}

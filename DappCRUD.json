@@ -1,0 +1,49 @@
+{
+
+"udl-SC_version" : "1.0", 
+"name" : "Crud", 
+"creation_date":"2020-06-23",
+"Business Perspective": {
+	"Legal":{ "name": "Ricardian contract" , "type":"gouvernemental" ,"link":"https://www.federalreserve.gov/" ,"description" : "Approved by regulator and financial institutions"},
+	"QOS":{ "service level": { "latency": "6ms", "gasConsomation": "1173748", "ContractGasPrice":"1173748"},
+			"Princing" :{" Gaslimit": "80000000", "tokenPrice": "234.56 USD"},
+			"security" : {"signed": "yes", "tested": "yes", "link":"https://github.com/cleanunicorn/karl", "description" : "Karl by Daniel Luca is a monitor for smart contracts that checks for security vulnerabilities using the Mythril detection engine. It can be used to monitor the Ethereum blockchain for newly deployed vulnerable smart contracts in real-time. It eliminates false positives by running candidate contracts in a virtual copy of the blockchain. Trust us, Karl discovers a lot of interesting gems every day."}
+	},
+	"participants" : {
+		"provider":"0xfe1bD11cD131C02f31A8b213651A8358FA1ab7a8",
+		"FutureUserType":"node"
+	},
+"sc characteristics ":{
+		"documentational characteristics":{ "used compiler":"0.5.0+commit.c7e474f2", 
+		    "usedRessources":"", 
+		    "abi" : "",
+			"deployed byte code" : "",
+			"description" : "allows create/update/ destroy/find user struct ",
+			"hash":"", 
+			"metadata":""},
+	   "common characteristics":{"type":"Application logic contracts (ALCs)",
+			"category":"static", "updateDate":"","state":"mutable","version":"solidity ^0.5.0", "initialBalance ": "0"
+	      ,"creationDate":"", "lifeCycle":"ready"}}},
+
+"technical Perspective":{ "blockhain characteristics ":{ "name":"Ethereum",  "type":"public", "consensus":"proof of stacke","currency":"ETH"},
+"Protocol information":{ "adress":"0x70c063b8A57c1208f0c84ffEbfFEb0C0B22B6715"}
+},
+"operationalPerspective":{
+	"Functions" : [
+	{"name": "",
+	"Type": "",
+	"scope" : "",
+	"description": "",
+	"inputs":[{"name": "", "Type": "" }],
+	"outputs": [{"name": "" , "Type": "" }]
+	}],
+	"Events": [
+	{"name": "",
+	"Type": "",
+	"description": "",
+	"outputs": [{"name": "", "Type": "","is_indexed" : true}]
+	}],
+	"Events": [
+	]
+}
+}

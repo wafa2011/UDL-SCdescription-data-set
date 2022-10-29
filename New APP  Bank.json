@@ -1,0 +1,103 @@
+{
+
+"udl-SC_version" : "1.0", 
+"name" : "NEW APP bank", 
+"creation_date":"2020-03-10",
+"Business Perspective": {
+	"Legal":{ "name": "" , "type":"" ,"Link":""},
+	"QOS":{ "service level": { "latency": "2ms", "gasConsomation": "237062 ", "ContractGasPrice":"237062 "},
+			"Princing" :{" Gaslimit": "80000000", "tokenPrice": "234.56 USD"},
+			"security" : {"signed": "yes", "tested": "yes", "link":"https://consensys.net/diligence/tools/", "description" : "A set of advance tools for Ethereum development, debugging and security"}
+	},
+	"participants" : {
+		"provider":"0x5B38Da6a701c568545dCfcB03FcB875f56beddC4",
+		"FutureUserType":"node"
+	},
+"sc characteristics ":{
+		"documentational characteristics":{ "used compiler":"=0.7.0+commit.c7e474f2", 
+		    "usedRessources":"", 
+		    "abi" : [
+	{
+		"inputs": [],
+		"stateMutability": "nonpayable",
+		"type": "constructor"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "int256",
+				"name": "amnt",
+				"type": "int256"
+			}
+		],
+		"name": "depose",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "getBalance",
+		"outputs": [
+			{
+				"internalType": "int256",
+				"name": "",
+				"type": "int256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "int256",
+				"name": "amnt",
+				"type": "int256"
+			}
+		],
+		"name": "withdrow",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	}
+],
+			"deployed byte code" : "0xd9145CCE52D386f254917e481eB44e9943F39138",
+			"description" : "BANK",
+			"hash":"0xdc43e5b2fd0f3a91985eba9c35ee711e87cfb121dada10bfb19e9892ffea273f", 
+			"metadata":""},
+	    "common characteristics":{"type":"Application logic contracts (ALCs)",
+			"category":"static", "updateDate":"","state":"mutable","version":">=0.7.0 <0.9.0", "initialBalance ": "0"
+	      ,"creationDate":"10/08/2022", "lifeCycle":"ready"}}},
+
+"technical Perspective":{ "blockhain characteristics ":{ "name":"Ethereum",  "type":"public", "consensus":"proof of stacke","currency":"ETH"},
+"Protocol information":{ "adress":"0x5B38Da6a701c568545dCfcB03FcB875f56beddC4"}
+},
+},
+"operationalPerspective":{
+	"Functions" : [
+	{"name": "getBalance",
+	"Type": "view",
+	"scope" : "public",
+	"description": "getBalance",
+	"inputs":[],
+	"outputs": [{"name": "res" , "Type": "int" }]
+	},
+	{"name": "withdrow",
+	"Type": "view",
+	"scope" : "public",
+	"description": "withdrow amount",
+	"inputs":[{"name": "amnt", "Type": "int " }],
+	"outputs": []
+	},
+	{"name": "depose",
+	"Type": "view",
+	"scope" : "public",
+	"description": "depose amount ",
+    "inputs":[{"name": "amnt", "Type": "int " }],
+	"outputs": []
+	}],
+	"Events": [
+	]
+}
+}

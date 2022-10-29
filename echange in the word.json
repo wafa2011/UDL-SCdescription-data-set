@@ -1,0 +1,56 @@
+{
+"UDL-SC_version" : "0.1", 
+"name" : "echange in the word", 
+"creation_date":"10/10/2005",
+"Business Perspective": {
+	"Legal":{ "name": "" , "type":"" ,"Link":""},
+	"QOS":{ "service level": { "latency": "", "gasConsomation": "", "ContractGasPrice":""},
+			"Princing" :{" Gaslimit": "", "tokenPrice": ""},
+			"security" : {"signed": "", "tested": "", "link":""}
+	},
+	"participants" : {
+		"provider":"",
+		"FutureUserType":""
+	},
+	"sc characteristics ":{
+		"documentational characteristics":{ "used compiler":"", 
+		    "usedRessources":"", 
+		    "abi" : "",
+			"deployed byte code" : "",
+			"description" : "BANK",
+			"hash":"", 
+			"metadata":""},
+	    "common characteristics":{"type":"",
+			"category":"", "updateDate":"","state":"","version":"", "initialBalance ": ""
+	      ,"creationDate":"", "lifeCycle":""}}},
+
+"technical Perspective":{ "blockhain characteristics ":{ "name":"",  "type":"", "consensus":"","currency":""},
+"Protocol information":{ "adress":""}
+},
+"operationalPerspective":{
+	"Functions" : [
+	{"name": "getBalance",
+	"Type": "view",
+	"scope" : "public",
+	"description": "getBalance",
+	"inputs":[],
+	"outputs": [{"name": "res" , "Type": "int" }]
+	},
+	{"name": "withdrow",
+	"Type": "view",
+	"scope" : "public",
+	"description": "withdrow amount",
+	"inputs":[{"name": "amnt", "Type": "int " }],
+	"outputs": []
+	},
+	{"name": "depose",
+	"Type": "view",
+	"scope" : "public",
+	"description": "depose amount ",
+    "inputs":[{"name": "amnt", "Type": "int " }],
+	"outputs": []
+	}],
+	"Events": [
+	]
+}
+}

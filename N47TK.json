@@ -1,0 +1,91 @@
+{
+
+"udl-SC_version" : "1.0", 
+"name" : "N47Token", 
+"creation_date":"2020-06-23",
+"Business Perspective": {
+	"Legal":{ "name": "Ricardian contract" , "type":"gouvernemental" ,"link":"https://www.federalreserve.gov/" ,"description" : "Approved by regulator and financial institutions"},
+	"QOS":{ "service level": { "latency": "6ms", "gasConsomation": "186703 ", "ContractGasPrice":"186703 "},
+			"Princing" :{" Gaslimit": "80000000", "tokenPrice": "234.56 USD"},
+			"security" : {"signed": "yes", "tested": "yes", "link":"https://github.com/ConsenSys/aragraph","description" : "A Tool to visualize permission relationships and other details of Aragon DAO’s."}
+	},
+	"participants" : {
+		"provider":"0x5B38Da6a701c568545dCfcB03FcB875f56beddC4",
+		"FutureUserType":"node"
+	},
+"sc characteristics ":{
+		"documentational characteristics":{ "used compiler":"0.8.4+commit.c7e474f2", 
+		    "usedRessources":"", 
+		    "abi" : "",
+			"deployed byte code" : "",
+			"description" : "",
+			"hash":"0x109590fbaf582b9cff510119ac47f50a362da08fb3e36509cbf84b7ea7e5d7d8", 
+			"metadata":""},
+	     "common characteristics":{"type":"Application logic contracts (ALCs)",
+			"category":"static", "updateDate":"","state":"mutable","version":"^0.8.4", "initialBalance ": "0"
+	      ,"creationDate":"10/08/2022", "lifeCycle":"ready"}}},
+
+"technical Perspective":{ "blockhain characteristics ":{ "name":"Ethereum",  "type":"public", "consensus":"proof of stacke","currency":"ETH"},
+"Protocol information":{ "adress":"0x70c063b8A57c1208f0c84ffEbfFEb0C0B22B6715"}
+},
+"operationalPerspective":{
+	"Functions" : [
+	{"name": "safeAdd",
+	"Type": "pure",
+	"scope" : "public",
+	"description": "addition a and b ",
+	"inputs":[{"name": "a", "Type": "uint" },{"name": "b", "Type": "uint"}],
+	"outputs": [{"name": "c" , "Type": "uint" }]
+	},{"name": "",
+	"Type": "pure",
+	"scope" : "public",
+	"description": "substraction  a and b ",
+	"inputs":[{"name": "a", "Type": "uint" },{"name": "b", "Type": "uint"}],
+	"outputs": [{"name": "c" , "Type": "uint" }]
+	},
+	{"name": "Total supply",
+	"Type": "view",
+	"scope" : "public",
+	"description": "Get Total supply",
+	"inputs":[],
+	"outputs": [{"name": "ts" , "Type": "uint" }]
+	},
+	{"name": "balanceOf",
+	"Type": "view",
+	"scope" : "public",
+	"description": "Get the token balance for account tokenOwner",
+	"inputs":[{"name": "tokenOwner", "Type": "address " }],
+	"outputs": [{"name": "balance" , "Type": "uint" }]
+	},
+	{"name": "transfer",
+	"Type": "",
+	"scope" : "public",
+	"description": "Transfer the balance from token owner's account to receiver account",
+	"inputs":[{"name": "receiver", "Type": "address" },{"name": "tokens", "Type": "uint " }],
+	"outputs": [{"name": "success" , "Type": "boype": "" }]
+	},
+	{"name": "approve",
+	"Type": "",
+	"scope" : "public",
+	"description": "Token owner can approve for spender to transferFrom(...) tokens   // from the token owner's account",
+	"inputs":[{"name": "spender", "Type": "address " },{"name": "tokens", "Type": " uint " }],
+	"outputs": [{"name": "success" , "Type": "bool" }]
+	}
+	,{"name": "transferFrom",
+	"Type": "",
+	"scope" : "public",
+	"description": "Transfer tokens from sender account to receiver account",
+	"inputs":[{"name": " sender", "Type": "address" },{"name": "receiver", "Type": "address" },{"name": " tokens", "Type": "uint" }],
+	"outputs": [{"name": "success" , "Type": "bool" }]
+	}
+	,{"name": "allowance",
+	"Type": "view",
+	"scope" : "public",
+	"description": "Returns the amount of tokens approved by the owner that can be // transferred to the spender's account"
+	"inputs":[{"name": " tokenOwner", "Type": "address" },{"name": " spender", "Type": "address" }],
+	"outputs": [{"name": "remaining" , "Type": "uint" }]
+	}],
+	"Events": [
+	]
+}
+}

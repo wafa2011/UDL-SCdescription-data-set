@@ -1,0 +1,55 @@
+"UDL-SC_version" : "1.0", 
+"name" : "safeCounter", 
+"creation_date":"11/03/2022",
+"Business Perspective": {
+    "Legal":{ "name": "" , "type":"" ,"link":"","description" : ""},
+	"QOS":{ "service level": { "latency": "1ms", "gasConsomation": "152137", "ContractGasPrice":"152137"},
+			"Princing" :{" Gaslimit": "266600", "tokenPrice": "234.56 USD"},
+			"security" : {"signed": "yes", "tested": "yes", "link":"https://github.com/OpenZeppelin/openzeppelin-contracts/contracts/math/SafeMath.sol","description" : "Using this library instead of the unchecked operations eliminates an entire class of bugs, so it’s recommended to use it always."}
+	},
+	"participants" : {
+		"provider":"0x5B38Da6a701c568545dCfcB03FcB875f56beddC4",
+		"FutureUserType":"node"
+	},
+	"sc characteristics ":{
+		"documentational characteristics":{ "used compiler":"0.5.2+commit.1df8f40c", 
+		    "usedRessources":"", 
+		    "abi" : "",
+			"deployed byte code" : "",
+			"description" : "safe counter by openzeplin safeMath librery",
+			"hash":"", 
+			"metadata":""},
+	    "common characteristics":{"type":"Application logic contracts (ALCs)",
+			"category":"static", "updateDate":"","state":"mutable","version":"solidity ^0.5.2", "initialBalance ": "0"
+	      ,"creationDate":"7/1/2019", "lifeCycle":"ready"}}},
+
+"technical Perspective":{ "blockhain characteristics ":{ "name":"Ethereum",  "type":"public", "consensus":"proof of stacke","currency":"ETH"},
+"Protocol information":{ "adress":"0xd8b934580fcE35a11B58C6D73aDeE468a2833fa8"}
+},
+"operationalPerspective":{
+	"Functions" : [
+	{"name": "increment",
+	"Type": "public",
+	"scope" : "",
+	"description": "increment an integer",
+	"inputs":[],
+	"outputs": []
+	},
+	{"name": "decrement",
+	"Type": "public",
+	"scope" : "",
+	"description": "decrement an integer",
+	"inputs":[],
+	"outputs": []
+	},
+	{"name": "getCount",
+	"Type": "public",
+	"scope" : "constant",
+	"description": "",
+	"inputs":[],
+	"outputs": [{"name": "res" , "Type": "uint" }]
+	}],
+	"Events": [
+	]
+}
+}

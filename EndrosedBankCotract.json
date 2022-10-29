@@ -1,0 +1,66 @@
+{
+"UDL-SC_version" : "0.1", 
+"name" : "endrosed bank contract", 
+"creation_date":"29/10/2022",
+"Business Perspective": {
+	"Legal":{ "name": "Ricardian contract" , "type":"gouvernemental" ,"link":"https://www.federalreserve.gov/" ,"description" : "Approved by regulator and financial institutions"},
+	"QOS":{ "service level": { "latency": "6ms", "gasConsomation": "608829", "ContractGasPrice":"608829"},
+			"Princing" :{" Gaslimit": "80000000", "tokenPrice": "234.56 USD"},
+			"security" : {"signed": "yes", "tested": "yes", "link":"https://github.com/cleanunicorn/karl", "description" : "Karl by Daniel Luca is a monitor for smart contracts that checks for security vulnerabilities using the Mythril detection engine. It can be used to monitor the Ethereum blockchain for newly deployed vulnerable smart contracts in real-time. It eliminates false positives by running candidate contracts in a virtual copy of the blockchain. Trust us, Karl discovers a lot of interesting gems every day."}
+	},
+	"participants" : {
+		"provider":"0xfe1bD11cD131C02f31A8b213651A8358FA1ab7a8",
+		"FutureUserType":"both"
+	},
+	"sc characteristics ":{
+		"documentational characteristics":{ "used compiler":"", 
+		    "usedRessources":"", 
+		    "abi" : "",
+			"deployed byte code" : "",
+			"description" : "bank smart contract to send and receive money",
+			"hash":"", 
+			"metadata":""},
+	    "common characteristics":{"type":"",
+			"category":"BANK", "updateDate":"","state":"","version":"", "initialBalance ": ""
+	      ,"creationDate":"", "lifeCycle":""}}},
+
+"technical Perspective":{ "blockhain characteristics ":{ "name":"",  "type":"", "consensus":"","currency":""},
+"Protocol information":{ "adress":""}
+},
+"operationalPerspective":{
+	"Functions" : [
+	{"name": "withdrow",
+	"Type": "view",
+	"scope" : "public",
+	"description": "withdrow amount",
+	"inputs":[{"name": "amnt", "Type": "uint " }],
+	"outputs": []
+	},
+	{"name": "depose",
+	"Type": "view",
+	"scope" : "public",
+	"description": "depose amount ",
+    "inputs":[{"name": "amnt", "Type": "uint " }],
+	"outputs": []
+	},
+	
+	{"name": "enroll",
+	"Type": "public",
+	"scope" : "",
+	"description": "Enroll a customer with the bank,",
+	"inputs":[],
+	"outputs": [{"name": "amnt" , "Type": "uint" }]
+	}],
+	"Events": [
+	{"name": "balance",
+	"Type": "public",
+	"description": "@notice Just reads balance of the account requesting, so constant",
+	"outputs": [{"name": "amnt", "Type": "uint","is_indexed" :false}]
+	},
+	{"name": "depositsBalance",
+	"Type": "public",
+	"description": "@return The balance of the Simple Bank contract",
+	"outputs": [{"name": "", "Type": "","is_indexed" : false}]
+	}]
+}
+}

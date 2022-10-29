@@ -1,0 +1,82 @@
+"UDL-SC_version" : "1.0", 
+"name" : "Storage", 
+"creation_date":"4/03/2010",
+"Business Perspective": {
+    "Legal":{ "name": "" , "type":"" ,"link":"","description" : ""},
+	"QOS":{ "service level": { "latency": "1ms", "gasConsomation": "97549  ", "ContractGasPrice":"97549  "},
+			"Princing" :{" Gaslimit": "266600", "tokenPrice": "234.56 USD"},
+			"security" : {"signed": "", "tested": "", "link":"","description" : ""}
+	},
+	"participants" : {
+		"provider":"0x5B38Da6a701c568545dCfcB03FcB875f56beddC4",
+		"FutureUserType":"node"
+	},
+	"sc characteristics ":{
+		"documentational characteristics":{ "used compiler":"0.4.13+commit.1df8f40c", 
+		    "usedRessources":"", 
+		    "abi" : [
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "x",
+				"type": "uint256"
+			}
+		],
+		"name": "set",
+		"outputs": [],
+		"payable": false,
+		"type": "function",
+		"stateMutability": "nonpayable"
+	},
+	{
+		"constant": true,
+		"inputs": [],
+		"name": "get",
+		"outputs": [
+			{
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"type": "function",
+		"stateMutability": "view"
+	}
+],
+			"deployed byte code" : {
+	"linkReferences": {},
+	"object": "6060604052341561000f57600080fd5b5b60ce8061001e6000396000f30060606040526000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff16806360fe47b11460475780636d4ce63c146067575b600080fd5b3415605157600080fd5b60656004808035906020019091905050608d565b005b3415607157600080fd5b60776098565b6040518082815260200191505060405180910390f35b806000819055505b50565b6000805490505b905600a165627a7a723058200f1de553b584115597420142763c8fdbd6f4da7c5e9250e1ed20ddc044f0a3a60029",
+	"opcodes": "PUSH1 0x60 PUSH1 0x40 MSTORE CALLVALUE ISZERO PUSH2 0xF JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST JUMPDEST PUSH1 0xCE DUP1 PUSH2 0x1E PUSH1 0x0 CODECOPY PUSH1 0x0 RETURN STOP PUSH1 0x60 PUSH1 0x40 MSTORE PUSH1 0x0 CALLDATALOAD PUSH29 0x100000000000000000000000000000000000000000000000000000000 SWAP1 DIV PUSH4 0xFFFFFFFF AND DUP1 PUSH4 0x60FE47B1 EQ PUSH1 0x47 JUMPI DUP1 PUSH4 0x6D4CE63C EQ PUSH1 0x67 JUMPI JUMPDEST PUSH1 0x0 DUP1 REVERT JUMPDEST CALLVALUE ISZERO PUSH1 0x51 JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST PUSH1 0x65 PUSH1 0x4 DUP1 DUP1 CALLDATALOAD SWAP1 PUSH1 0x20 ADD SWAP1 SWAP2 SWAP1 POP POP PUSH1 0x8D JUMP JUMPDEST STOP JUMPDEST CALLVALUE ISZERO PUSH1 0x71 JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST PUSH1 0x77 PUSH1 0x98 JUMP JUMPDEST PUSH1 0x40 MLOAD DUP1 DUP3 DUP2 MSTORE PUSH1 0x20 ADD SWAP2 POP POP PUSH1 0x40 MLOAD DUP1 SWAP2 SUB SWAP1 RETURN JUMPDEST DUP1 PUSH1 0x0 DUP2 SWAP1 SSTORE POP JUMPDEST POP JUMP JUMPDEST PUSH1 0x0 DUP1 SLOAD SWAP1 POP JUMPDEST SWAP1 JUMP STOP LOG1 PUSH6 0x627A7A723058 KECCAK256 0xf 0x1d 0xe5 MSTORE8 0xb5 DUP5 GT SSTORE SWAP8 TIMESTAMP ADD TIMESTAMP PUSH23 0x3C8FDBD6F4DA7C5E9250E1ED20DDC044F0A3A600290000 ",
+	"sourceMap": "65:184:0:-;;;;;;;;;;;;;;;;;;"
+},
+			"description" : "allow storing and getting integer",
+			"hash":"0x3397583d8c1c281cc4b6e14e43235899589a175e1e7e59b4ee067c5b3b6b1972", 
+			"metadata":""},
+	    "common characteristics":{"type":"Application logic contracts (ALCs)",
+			"category":"static", "updateDate":"","state":"mutable","version":"solidity ^0.4.13", "initialBalance ": "0"
+	      ,"creationDate":"7/1/2019", "lifeCycle":"ready"}}},
+
+"technical Perspective":{ "blockhain characteristics ":{ "name":"Ethereum",  "type":"public", "consensus":"proof of stacke","currency":"ETH"},
+"Protocol information":{ "adress":"0x5B38Da6a701c568545dCfcB03FcB875f56beddC4"}
+},
+"operationalPerspective":{
+	"Functions" : [
+	{"name": "set",
+	"Type": "",
+	"scope" : "public",
+	"description": "set an integer",
+	"inputs":[{"name": "x", "Type": "uint" }],
+	"outputs": []
+	},
+	{"name": "get",
+	"Type": "constant",
+	"scope" : "",
+	"description": "get an integer",
+	"inputs":[],
+	"outputs": [{"name": "data" , "Type": "string" }]
+	}],
+	"Events": [
+	]
+}
+}

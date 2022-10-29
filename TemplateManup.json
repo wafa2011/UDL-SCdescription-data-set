@@ -1,0 +1,61 @@
+"UDL-SC_version" : "1.0", 
+"name" : "", 
+"creation_date":"11/03/2022",
+"Business Perspective": {
+    "Legal":{ "name": "" , "type":"" ,"link":"","description" : ""},
+	"QOS":{ "service level": { "latency": "6ms", "gasConsomation": "90133 ", "ContractGasPrice":"90133 "},
+			"Princing" :{" Gaslimit": "266600", "tokenPrice": "234.56 USD"},
+			"security" : {"signed": "", "tested": "", "link":"","description" : ""}
+	},
+	"participants" : {
+		"provider":"0x03C6FcED478cBbC9a4FAB34eF9f40767739D1Ff7",
+		"FutureUserType":"node"
+	},
+	"sc characteristics ":{
+		"documentational characteristics":{ "used compiler":"0.4.24+commit.1df8f40c", 
+		    "usedRessources":"", 
+		    "abi" : [
+	{
+		"constant": true,
+		"inputs": [],
+		"name": "getNumber",
+		"outputs": [
+			{
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	}
+],
+			"deployed byte code" : {
+	"linkReferences": {},
+	"object": "608060405260008055348015601357600080fd5b5060a1806100226000396000f300608060405260043610603f576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff168063f2c9ecd8146044575b600080fd5b348015604f57600080fd5b506056606c565b6040518082815260200191505060405180910390f35b600080549050905600a165627a7a72305820bee3ec90a8727ac9c868a81db91e0b2888fbacbf2d347dffa529153308c307b90029",
+	"opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE PUSH1 0x0 DUP1 SSTORE CALLVALUE DUP1 ISZERO PUSH1 0x13 JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP PUSH1 0xA1 DUP1 PUSH2 0x22 PUSH1 0x0 CODECOPY PUSH1 0x0 RETURN STOP PUSH1 0x80 PUSH1 0x40 MSTORE PUSH1 0x4 CALLDATASIZE LT PUSH1 0x3F JUMPI PUSH1 0x0 CALLDATALOAD PUSH29 0x100000000000000000000000000000000000000000000000000000000 SWAP1 DIV PUSH4 0xFFFFFFFF AND DUP1 PUSH4 0xF2C9ECD8 EQ PUSH1 0x44 JUMPI JUMPDEST PUSH1 0x0 DUP1 REVERT JUMPDEST CALLVALUE DUP1 ISZERO PUSH1 0x4F JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP PUSH1 0x56 PUSH1 0x6C JUMP JUMPDEST PUSH1 0x40 MLOAD DUP1 DUP3 DUP2 MSTORE PUSH1 0x20 ADD SWAP2 POP POP PUSH1 0x40 MLOAD DUP1 SWAP2 SUB SWAP1 RETURN JUMPDEST PUSH1 0x0 DUP1 SLOAD SWAP1 POP SWAP1 JUMP STOP LOG1 PUSH6 0x627A7A723058 KECCAK256 0xbe 0xe3 0xec SWAP1 0xa8 PUSH19 0x7AC9C868A81DB91E0B2888FBACBF2D347DFFA5 0x29 ISZERO CALLER ADDMOD 0xc3 SMOD 0xb9 STOP 0x29 ",
+	"sourceMap": "67:251:0:-;;;132:1;118:15;;67:251;8:9:-1;5:2;;;30:1;27;20:12;5:2;67:251:0;;;;;;;"
+},
+			"description" : "get number",
+			"hash":"0x4b84fab3ad3b0f09395d239d0dc20e6ab3b957ce8cc5b1679b12869bd5ff4627", 
+			"metadata":""},
+	    "common characteristics":{"type":"Application logic contracts (ALCs)",
+			"category":"static", "updateDate":"","state":"mutable","version":"solidity ^0.4.24", "initialBalance ": "0"
+	      ,"creationDate":"7/1/2019", "lifeCycle":"ready"}}},
+
+"technical Perspective":{ "blockhain characteristics ":{ "name":"Ethereum",  "type":"public", "consensus":"proof of stacke","currency":"ETH"},
+"Protocol information":{ "adress":"0x03C6FcED478cBbC9a4FAB34eF9f40767739D1Ff7"}
+},
+"operationalPerspective":{
+	"Functions" : [
+	{"name": "getNumber",
+	"Type": "view",
+	"scope" : "public",
+	"description": "get number",
+	"inputs":[],
+	"outputs": [{"name": "number" , "Type": "uint" }]
+	}],
+	"Events": [
+	]
+}
+}

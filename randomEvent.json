@@ -1,0 +1,173 @@
+"UDL-SC_version" : "1.0", 
+"name" : "SimpleToken", 
+"creation_date":"11/03/2018",
+"Business Perspective": {
+    "Legal":{ "name": "" , "type":"" ,"link":"","description" : ""},
+	"QOS":{ "service level": { "latency": "1ms", "gasConsomation": "193213   ", "ContractGasPrice":"193213   "},
+			"Princing" :{" Gaslimit": "80000000 ", "tokenPrice": "234.56 USD"},
+			"security" : {"signed": "", "tested": "", "link":"","description" : ""}
+	},
+	"participants" : {
+		"provider":"0x03C6FcED478cBbC9a4FAB34eF9f40767739D1Ff7",
+		"FutureUserType":"both"
+	},
+	"sc characteristics ":{
+		"documentational characteristics":{ "used compiler":"0.5.0+commit.1df8f40c", 
+		    "usedRessources":"", 
+		    "abi" : [
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"name": "min",
+				"type": "uint256"
+			},
+			{
+				"name": "max",
+				"type": "uint256"
+			}
+		],
+		"name": "randNow",
+		"outputs": [
+			{
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "min",
+				"type": "uint256"
+			},
+			{
+				"name": "max",
+				"type": "uint256"
+			}
+		],
+		"name": "randHash",
+		"outputs": [
+			{
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [],
+		"name": "getBlockNum",
+		"outputs": [
+			{
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [],
+		"name": "getNow",
+		"outputs": [
+			{
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": false,
+				"name": "min",
+				"type": "uint256"
+			},
+			{
+				"indexed": false,
+				"name": "max",
+				"type": "uint256"
+			},
+			{
+				"indexed": false,
+				"name": "timestamp",
+				"type": "uint256"
+			},
+			{
+				"indexed": false,
+				"name": "blockNumber",
+				"type": "uint256"
+			}
+		],
+		"name": "RandHash",
+		"type": "event"
+	}
+],
+			"deployed byte code" :{
+	"linkReferences": {},
+	"object": "608060405234801561001057600080fd5b50610289806100206000396000f3fe608060405260043610610062576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff168063488e4a351461006757806373d9ded0146100c05780637f6c6f1014610119578063bbe4fd5014610144575b600080fd5b34801561007357600080fd5b506100aa6004803603604081101561008a57600080fd5b81019080803590602001909291908035906020019092919050505061016f565b6040518082815260200191505060405180910390f35b3480156100cc57600080fd5b50610103600480360360408110156100e357600080fd5b810190808035906020019092919080359060200190929190505050610190565b6040518082815260200191505060405180910390f35b34801561012557600080fd5b5061012e61024d565b6040518082815260200191505060405180910390f35b34801561015057600080fd5b50610159610255565b6040518082815260200191505060405180910390f35b60008283830361017d610255565b81151561018657fe5b0601905092915050565b60007fa0e3b5cc6a5bf343438b0c4eccbf662218564debd45da350b10c648f8138b3b683836101bd610255565b6101c561024d565b6040518085815260200184815260200183815260200182815260200194505050505060405180910390a160006101f9610255565b61020161024d565b604051602001808381526020018281526020019250505060405160208183030381529060405280519060200120905083848403826001900481151561024257fe5b060191505092915050565b600043905090565b60004290509056fea165627a7a72305820fe6e3e08c469d3b83ca24ca30d4703ddd2d14ac23001938ebd3487ee3e7be0aa0029",
+	"opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE CALLVALUE DUP1 ISZERO PUSH2 0x10 JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP PUSH2 0x289 DUP1 PUSH2 0x20 PUSH1 0x0 CODECOPY PUSH1 0x0 RETURN INVALID PUSH1 0x80 PUSH1 0x40 MSTORE PUSH1 0x4 CALLDATASIZE LT PUSH2 0x62 JUMPI PUSH1 0x0 CALLDATALOAD PUSH29 0x100000000000000000000000000000000000000000000000000000000 SWAP1 DIV PUSH4 0xFFFFFFFF AND DUP1 PUSH4 0x488E4A35 EQ PUSH2 0x67 JUMPI DUP1 PUSH4 0x73D9DED0 EQ PUSH2 0xC0 JUMPI DUP1 PUSH4 0x7F6C6F10 EQ PUSH2 0x119 JUMPI DUP1 PUSH4 0xBBE4FD50 EQ PUSH2 0x144 JUMPI JUMPDEST PUSH1 0x0 DUP1 REVERT JUMPDEST CALLVALUE DUP1 ISZERO PUSH2 0x73 JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP PUSH2 0xAA PUSH1 0x4 DUP1 CALLDATASIZE SUB PUSH1 0x40 DUP2 LT ISZERO PUSH2 0x8A JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST DUP2 ADD SWAP1 DUP1 DUP1 CALLDATALOAD SWAP1 PUSH1 0x20 ADD SWAP1 SWAP3 SWAP2 SWAP1 DUP1 CALLDATALOAD SWAP1 PUSH1 0x20 ADD SWAP1 SWAP3 SWAP2 SWAP1 POP POP POP PUSH2 0x16F JUMP JUMPDEST PUSH1 0x40 MLOAD DUP1 DUP3 DUP2 MSTORE PUSH1 0x20 ADD SWAP2 POP POP PUSH1 0x40 MLOAD DUP1 SWAP2 SUB SWAP1 RETURN JUMPDEST CALLVALUE DUP1 ISZERO PUSH2 0xCC JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP PUSH2 0x103 PUSH1 0x4 DUP1 CALLDATASIZE SUB PUSH1 0x40 DUP2 LT ISZERO PUSH2 0xE3 JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST DUP2 ADD SWAP1 DUP1 DUP1 CALLDATALOAD SWAP1 PUSH1 0x20 ADD SWAP1 SWAP3 SWAP2 SWAP1 DUP1 CALLDATALOAD SWAP1 PUSH1 0x20 ADD SWAP1 SWAP3 SWAP2 SWAP1 POP POP POP PUSH2 0x190 JUMP JUMPDEST PUSH1 0x40 MLOAD DUP1 DUP3 DUP2 MSTORE PUSH1 0x20 ADD SWAP2 POP POP PUSH1 0x40 MLOAD DUP1 SWAP2 SUB SWAP1 RETURN JUMPDEST CALLVALUE DUP1 ISZERO PUSH2 0x125 JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP PUSH2 0x12E PUSH2 0x24D JUMP JUMPDEST PUSH1 0x40 MLOAD DUP1 DUP3 DUP2 MSTORE PUSH1 0x20 ADD SWAP2 POP POP PUSH1 0x40 MLOAD DUP1 SWAP2 SUB SWAP1 RETURN JUMPDEST CALLVALUE DUP1 ISZERO PUSH2 0x150 JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP PUSH2 0x159 PUSH2 0x255 JUMP JUMPDEST PUSH1 0x40 MLOAD DUP1 DUP3 DUP2 MSTORE PUSH1 0x20 ADD SWAP2 POP POP PUSH1 0x40 MLOAD DUP1 SWAP2 SUB SWAP1 RETURN JUMPDEST PUSH1 0x0 DUP3 DUP4 DUP4 SUB PUSH2 0x17D PUSH2 0x255 JUMP JUMPDEST DUP2 ISZERO ISZERO PUSH2 0x186 JUMPI INVALID JUMPDEST MOD ADD SWAP1 POP SWAP3 SWAP2 POP POP JUMP JUMPDEST PUSH1 0x0 PUSH32 0xA0E3B5CC6A5BF343438B0C4ECCBF662218564DEBD45DA350B10C648F8138B3B6 DUP4 DUP4 PUSH2 0x1BD PUSH2 0x255 JUMP JUMPDEST PUSH2 0x1C5 PUSH2 0x24D JUMP JUMPDEST PUSH1 0x40 MLOAD DUP1 DUP6 DUP2 MSTORE PUSH1 0x20 ADD DUP5 DUP2 MSTORE PUSH1 0x20 ADD DUP4 DUP2 MSTORE PUSH1 0x20 ADD DUP3 DUP2 MSTORE PUSH1 0x20 ADD SWAP5 POP POP POP POP POP PUSH1 0x40 MLOAD DUP1 SWAP2 SUB SWAP1 LOG1 PUSH1 0x0 PUSH2 0x1F9 PUSH2 0x255 JUMP JUMPDEST PUSH2 0x201 PUSH2 0x24D JUMP JUMPDEST PUSH1 0x40 MLOAD PUSH1 0x20 ADD DUP1 DUP4 DUP2 MSTORE PUSH1 0x20 ADD DUP3 DUP2 MSTORE PUSH1 0x20 ADD SWAP3 POP POP POP PUSH1 0x40 MLOAD PUSH1 0x20 DUP2 DUP4 SUB SUB DUP2 MSTORE SWAP1 PUSH1 0x40 MSTORE DUP1 MLOAD SWAP1 PUSH1 0x20 ADD KECCAK256 SWAP1 POP DUP4 DUP5 DUP5 SUB DUP3 PUSH1 0x1 SWAP1 DIV DUP2 ISZERO ISZERO PUSH2 0x242 JUMPI INVALID JUMPDEST MOD ADD SWAP2 POP POP SWAP3 SWAP2 POP POP JUMP JUMPDEST PUSH1 0x0 NUMBER SWAP1 POP SWAP1 JUMP JUMPDEST PUSH1 0x0 TIMESTAMP SWAP1 POP SWAP1 JUMP INVALID LOG1 PUSH6 0x627A7A723058 KECCAK256 INVALID PUSH15 0x3E08C469D3B83CA24CA30D4703DDD2 0xd1 0x4a 0xc2 ADDRESS ADD SWAP4 DUP15 0xbd CALLVALUE DUP8 0xee RETURNDATACOPY PUSH28 0xE0AA0029000000000000000000000000000000000000000000000000 ",
+	"sourceMap": "28:929:0:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;28:929:0;;;;;;;"
+},
+			"description" : "calculation of random uint between min and max bounds and send event",
+			"hash":"0xe7bec1cfba1e11b5235b3ce9483c808e9d695ca16c6004acecc4f626f498d54a", 
+			"metadata":""},
+	    "common characteristics":{"type":"Application logic contracts (ALCs)",
+			"category":"static", "updateDate":"","state":"mutable","version":"solidity >=0.5.0", "initialBalance ": "0"
+	      ,"creationDate":"7/1/2019", "lifeCycle":"ready"}}},
+
+"technical Perspective":{ "blockhain characteristics ":{ "name":"Ethereum",  "type":"public", "consensus":"proof of stacke","currency":"ETH"},
+"Protocol information":{ "adress":"0x03C6FcED478cBbC9a4FAB34eF9f40767739D1Ff7"}
+},
+"operationalPerspective":{
+	"Functions" : [
+	{"name": "getBlockNum",
+	"Type": "public",
+	"scope" : "constant",
+	"description": "get Block Num",
+	"inputs":[}],
+	"outputs": [{"name": "" , "Type": "uint" }]
+	},
+	{"name": "getNow",
+	"Type": "public",
+	"scope" : "constant",
+	"description": "get uint now",
+	"inputs":[}],
+	"outputs": [{"name": "" , "Type": "uint" }]
+	},
+	{"name": "randNow",
+	"Type": "public",
+	"scope" : "constant",
+	"description": "random now between min and max bounds",
+	"inputs":[{"name": "min", "Type": "uint" },{"name": "max", "Type": "uint" }],
+	"outputs": [{"name": "" , "Type": "uint" }]
+	},
+	{"name": "randHash",
+	"Type": "public",
+	"scope" : "constant",
+	"description": "random hash between min and max bounds",
+	"inputs":[{"name": "min", "Type": "uint" },{"name": "max", "Type": "uint" }],
+	"outputs": [{"name": "" , "Type": "uint" }]
+	}],
+	"Events": [
+	{"name": "RandHash",
+	"Type": "costum",
+	"description": "Rand Hash event",
+	"outputs": [{"name": "min", "Type": "uint","is_indexed" :false},{"name": "max", "Type": "uint","is_indexed" :false},{"name": "timestamp", "Type": "uint","is_indexed" :false},{"name": "blockNumber", "Type": "uint","is_indexed" :false}]
+	}]
+}
+}
