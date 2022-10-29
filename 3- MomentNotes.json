@@ -1,0 +1,106 @@
+{
+"UDL-SC_version" : "1.0", 
+"name" : " MomentNotes ", 
+"creation_date":"2020-06-23",
+"Business Perspective": {
+	"Legal":{ "name": "Ricardian contract" , "type":"Ricardian contract" ,"link":"https://www.barclays.co.uk/","description" : ""},
+	"QOS":{ "service level": { "latency": "6ms", "gasConsomation": "1173748", "ContractGasPrice":"1173748"},
+			"Princing" :{" Gaslimit": "80000000", "tokenPrice": "234.56 USD"},
+			"security" : {"signed": "yes", "tested": "yes", "link":"https://swcregistry.io/","description" : "The Smart Contract Weakness Classification Registry is an implementation of the weakness classification scheme proposed in EIP-1470. It is loosely aligned to the terminologies and structure used in the Common Weakness Enumeration (CWE) while overlaying a wide range of weakness variants that are specific to smart contracts."}
+	},
+	"participants" : {
+		"provider":"0xfe1bD11cD131C02f31A8b213651A8358FA1ab7a8",
+		"FutureUserType":"both"
+	},
+	"sc characteristics ":{
+		"documentational characteristics":{ "used compiler":"0.8.7+commit.e28d00a7", 
+		    "usedRessources":"", 
+		    "abi" : [,
+	{
+		"inputs": [],
+		"stateMutability": "nonpayable",
+		"type": "constructor"
+	},
+	{
+		"inputs": [],
+		"name": "maxLength",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "notes",
+		"outputs": [
+			{
+				"internalType": "string",
+				"name": "",
+				"type": "string"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "_maxLength",
+				"type": "uint256"
+			}
+		],
+		"name": "setMaxLength",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "_notes",
+				"type": "string"
+			}
+		],
+		"name": "setNotes",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	}
+],
+			"deployed byte code" : 
+			"description" : "allows adding notes",
+			"hash":"0x42991125edfe88d8cc9f31a2d100d330cd812417c1326726b99ead701a809d29", 
+			"metadata":""},
+	    "common characteristics":{"type":"Application logic contracts (ALCs)",
+			"category":"static", "updateDate":"","state":"mutable","version":"solidity  >=0.7.0 <0.9.0", "initialBalance ": "0"
+	      ,"creationDate":"5/1/2021", "lifeCycle":"ready"}}},
+
+"technical Perspective":{ "blockhain characteristics ":{ "name":"Ethereum",  "type":"public", "consensus":"proof of stacke","currency":"ETH"},
+"Protocol information":{ "adress":"0x5B38Da6a701c568545dCfcB03FcB875f56beddC4"}
+},
+"operationalPerspective":{
+	"Functions" : [
+	{"name": "setNotes",
+	"Type": "",
+	"scope" : "public",
+	"description": "set the note veriable",
+	"inputs":[{"name": "_notes", "Type": "string" }],
+	"outputs": []
+	},
+	{"name": "setMaxLength",
+	"Type": "",
+	"scope" : "public",
+	"description": " used to set max length of notes",
+	"inputs":[{"name": "maxLength", "Type": "uint" }],
+	"outputs": []
+	}],
+	"Events": []
+}
+}

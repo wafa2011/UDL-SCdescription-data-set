@@ -1,0 +1,252 @@
+{
+
+"udl-SC_version" : "1.0", 
+"name" : "My Token", 
+"creation_date":"2020-06-23",
+"Business Perspective": {
+	"Legal":{ "name": "Ricardian contract" , "type":"Ricardian contract" ,"link":"https://www.barclays.co.uk/", "description" : ""},
+	"QOS":{ "service level": { "latency": "6ms", "gasConsomation": "608829", "ContractGasPrice":"608829"},
+			"Princing" :{" Gaslimit": "80000000", "tokenPrice": "234.56 USD"},
+			"security" : {"signed": "yes", "tested": "yes", "link":"https://blog.openzeppelin.com/augur-core-audit-244160d77c09/", "description" : ""}
+	},
+	"participants" : {
+		"provider":"0xfe1bD11cD131C02f31A8b213651A8358FA1ab7a8",
+		"FutureUserType":"both"
+	},
+"sc characteristics ":{
+		"documentational characteristics":{ "used compiler":"v0.6.2+commit.bacdbe57", 
+		    "usedRessources":"ipfs://7e7b5a97eb73750499b4df6281cb690d53527af91066669fcb56c035578c6beb", 
+		    "abi" : [
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "_spender",
+				"type": "address"
+			},
+			{
+				"name": "_value",
+				"type": "uint256"
+			}
+		],
+		"name": "approve",
+		"outputs": [
+			{
+				"name": "success",
+				"type": "bool"
+			}
+		],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [],
+		"name": "totalSupply",
+		"outputs": [
+			{
+				"name": "_totalSupply",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "_from",
+				"type": "address"
+			},
+			{
+				"name": "_to",
+				"type": "address"
+			},
+			{
+				"name": "_value",
+				"type": "uint256"
+			}
+		],
+		"name": "transferFrom",
+		"outputs": [
+			{
+				"name": "success",
+				"type": "bool"
+			}
+		],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"name": "_owner",
+				"type": "address"
+			}
+		],
+		"name": "balanceOf",
+		"outputs": [
+			{
+				"name": "balance",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "_to",
+				"type": "address"
+			},
+			{
+				"name": "_value",
+				"type": "uint256"
+			}
+		],
+		"name": "transfer",
+		"outputs": [
+			{
+				"name": "success",
+				"type": "bool"
+			}
+		],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"name": "_owner",
+				"type": "address"
+			},
+			{
+				"name": "_spender",
+				"type": "address"
+			}
+		],
+		"name": "allowance",
+		"outputs": [
+			{
+				"name": "remaining",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": true,
+				"name": "_from",
+				"type": "address"
+			},
+			{
+				"indexed": true,
+				"name": "_to",
+				"type": "address"
+			},
+			{
+				"indexed": false,
+				"name": "_value",
+				"type": "uint256"
+			}
+		],
+		"name": "Transfer",
+		"type": "event"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": true,
+				"name": "_owner",
+				"type": "address"
+			},
+			{
+				"indexed": true,
+				"name": "_spender",
+				"type": "address"
+			},
+			{
+				"indexed": false,
+				"name": "_value",
+				"type": "uint256"
+			}
+		],
+		"name": "Approval",
+		"type": "event"
+	}
+],
+			"deployed byte code" : "",
+			"description" : "a contract that creat a new token , an instance of the ERC20 interface ",
+			"hash":"f5c975211f213eeeec3082e49918d47948f446c42a9e316fc9b3bb433d72e9a6", 
+			"metadata":"ipfs://QmRwX1nXrkWxmBSogJjWza9VZaVxrRSaKxEkgS3MXNRcwr"},
+	   "common characteristics":{"type":"Application logic contracts (ALCs)",
+			"category":"static", "updateDate":"","state":"mutable","version":"solidity ^0.4.0", "initialBalance ": "0"
+	      ,"creationDate":"7/1/2019", "lifeCycle":"ready"}}},
+
+"technical Perspective":{ "blockhain characteristics ":{ "name":"Ethereum",  "type":"public", "consensus":"proof of stacke","currency":"ETH"},
+"Protocol information":{ "adress":"0xd8b934580fcE35a11B58C6D73aDeE468a2833fa8"}
+},
+"operationalPerspective":{
+	"Functions" : [
+	{"name": "totalSupply",
+	"Type": "",
+	"scope" : "public",
+	"description": "allows getting the total supply",
+	"inputs":[],
+	"outputs": [{"name": "uint" , "Type": " _totalSupply" }]
+	},
+	{"name": "balanceOf",
+	"Type": "",
+	"scope" : "public",
+	"description": "allows getting the balance of input address",
+	"inputs":[{"name": "_addr", "Type": "address" }],
+	"outputs": [{"name": "balance" , "Type": "uint" }]
+	},
+	{"name": "transfer",
+	"Type": "",
+	"scope" : "public",
+	"description":  "getting true if a transfer of money to an input adress is doing sucessfully",
+	"inputs":[{"name": "_to", "Type": "address" },{"name": "_value", "Type": "uint" }],
+	"outputs": [{"name": "success" , "Type": "bool" }]
+	},
+	{"name": "transferFrom",
+	"Type": "",
+	"scope" : "public",
+	"description": "allows transfering a value from an adress to another, true if the action is performed sucessfully",
+	"inputs":[{"name": "_from", "Type": "address" },{"name": "_to", "Type": "address" },{"name": "_value", "Type": "uint" }],
+	"outputs": [{"name": "success" , "Type": "bool" }]
+	},
+	{"name": "allownance",
+	"Type": "",
+	"scope" : "public",
+	"description": "allows the owner to spend ",
+	"inputs":[{"name": "_spender", "Type": "address" },{"name": "_owner", "Type": "address" }],
+	"outputs": [{"name": "remaining" , "Type": "uint" }]
+	},
+	{"name": "approve",
+	"Type": "",
+	"scope" : "public",
+	"description": "approve the allownace of the input adress to the spender, return bool",
+	"inputs":[{"name": "_spender", "Type": "address" },{"name": "_value", "Type": "uint" }],
+	"outputs": [{"name": "success" , "Type": "bool" }]
+	}
+	],
+	
+}
+}

@@ -1,0 +1,93 @@
+"UDL-SC_version" : "1.0", 
+"name" : "Counter", 
+"creation_date":"11/03/2022",
+"Business Perspective": {
+    "Legal":{ "name": "" , "type":"" ,"link":"","description" : ""},
+	"QOS":{ "service level": { "latency": "1ms", "gasConsomation": "110835 ", "ContractGasPrice":"110835 "},
+			"Princing" :{" Gaslimit": "80000000 ", "tokenPrice": "234.56 USD"},
+			"security" : {"signed": "", "tested": "", "link":"","description" : ""}
+	},
+	"participants" : {
+		"provider":"0x5c6B0f7Bf3E7ce046039Bd8FABdfD3f9F5021678",
+		"FutureUserType":"node"
+	},
+	"sc characteristics ":{
+		"documentational characteristics":{ "used compiler":"", 
+		    "usedRessources":"", 
+		    "abi" : [
+	{
+		"constant": false,
+		"inputs": [],
+		"name": "decrement",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [],
+		"name": "getCount",
+		"outputs": [
+			{
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [],
+		"name": "increment",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	}
+],
+			"deployed byte code" : {
+	"linkReferences": {},
+	"object": "60806040526000805534801561001457600080fd5b50610101806100246000396000f3006080604052600436106053576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680632baeceb7146058578063a87d942c14606c578063d09de08a146094575b600080fd5b348015606357600080fd5b50606a60a8565b005b348015607757600080fd5b50607e60ba565b6040518082815260200191505060405180910390f35b348015609f57600080fd5b5060a660c3565b005b60016000808282540392505081905550565b60008054905090565b600160008082825401925050819055505600a165627a7a72305820be68f34e8d1a8359e9870456e18d318190ab47ceabb3c80c798a9e71a72a2d6b0029",
+	"opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE PUSH1 0x0 DUP1 SSTORE CALLVALUE DUP1 ISZERO PUSH2 0x14 JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP PUSH2 0x101 DUP1 PUSH2 0x24 PUSH1 0x0 CODECOPY PUSH1 0x0 RETURN STOP PUSH1 0x80 PUSH1 0x40 MSTORE PUSH1 0x4 CALLDATASIZE LT PUSH1 0x53 JUMPI PUSH1 0x0 CALLDATALOAD PUSH29 0x100000000000000000000000000000000000000000000000000000000 SWAP1 DIV PUSH4 0xFFFFFFFF AND DUP1 PUSH4 0x2BAECEB7 EQ PUSH1 0x58 JUMPI DUP1 PUSH4 0xA87D942C EQ PUSH1 0x6C JUMPI DUP1 PUSH4 0xD09DE08A EQ PUSH1 0x94 JUMPI JUMPDEST PUSH1 0x0 DUP1 REVERT JUMPDEST CALLVALUE DUP1 ISZERO PUSH1 0x63 JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP PUSH1 0x6A PUSH1 0xA8 JUMP JUMPDEST STOP JUMPDEST CALLVALUE DUP1 ISZERO PUSH1 0x77 JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP PUSH1 0x7E PUSH1 0xBA JUMP JUMPDEST PUSH1 0x40 MLOAD DUP1 DUP3 DUP2 MSTORE PUSH1 0x20 ADD SWAP2 POP POP PUSH1 0x40 MLOAD DUP1 SWAP2 SUB SWAP1 RETURN JUMPDEST CALLVALUE DUP1 ISZERO PUSH1 0x9F JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP PUSH1 0xA6 PUSH1 0xC3 JUMP JUMPDEST STOP JUMPDEST PUSH1 0x1 PUSH1 0x0 DUP1 DUP3 DUP3 SLOAD SUB SWAP3 POP POP DUP2 SWAP1 SSTORE POP JUMP JUMPDEST PUSH1 0x0 DUP1 SLOAD SWAP1 POP SWAP1 JUMP JUMPDEST PUSH1 0x1 PUSH1 0x0 DUP1 DUP3 DUP3 SLOAD ADD SWAP3 POP POP DUP2 SWAP1 SSTORE POP JUMP STOP LOG1 PUSH6 0x627A7A723058 KECCAK256 0xbe PUSH9 0xF34E8D1A8359E98704 JUMP 0xe1 DUP14 BALANCE DUP2 SWAP1 0xab 0x47 0xce 0xab 0xb3 0xc8 0xc PUSH26 0x8A9E71A72A2D6B00290000000000000000000000000000000000 ",
+	"sourceMap": "28:270:0:-;;;73:1;52:22;;28:270;8:9:-1;5:2;;;30:1;27;20:12;5:2;28:270:0;;;;;;;"
+},
+			"description" : "Counter to increment and decrement integer and get count",
+			"hash":"0x48c817c16060f427b485caf6e600ddef278d238f742bf75f4d5f6ca06c6ee553", 
+			"metadata":""},
+	    "common characteristics":{"type":"Application logic contracts (ALCs)",
+			"category":"static", "updateDate":"","state":"mutable","version":"solidity ^0.5.2", "initialBalance ": "0"
+	      ,"creationDate":"7/1/2019", "lifeCycle":"ready"}}},
+
+"technical Perspective":{ "blockhain characteristics ":{ "name":"Ethereum",  "type":"public", "consensus":"proof of stacke","currency":"ETH"},
+"Protocol information":{ "adress":"0x5c6B0f7Bf3E7ce046039Bd8FABdfD3f9F5021678"}
+},
+"operationalPerspective":{
+	"Functions" : [
+	{"name": "increment",
+	"Type": "public",
+	"scope" : "",
+	"description": "increment an integer",
+	"inputs":[],
+	"outputs": []
+	},
+	{"name": "decrement",
+	"Type": "public",
+	"scope" : "",
+	"description": "decrement an integer",
+	"inputs":[],
+	"outputs": []
+	},
+	{"name": "getCount",
+	"Type": "public",
+	"scope" : "constant",
+	"description": "",
+	"inputs":[],
+	"outputs": [{"name": "res" , "Type": "uint" }]
+	}],
+	"Events": [
+	]
+}
+}

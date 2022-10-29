@@ -1,0 +1,43 @@
+{
+"UDL-SC_version" : "1.0", 
+"name" : "Wallet", 
+"creation_date":"11/03/2022",
+"Business Perspective": {
+    "Legal":{ "name": "state" , "type":"gouvernemental" ,"link":"https://www.federalreserve.gov/","description" : "The Federal Reserve System is the central bank of the United States."},
+	"QOS":{ "service level": { "latency": "6ms", "gasConsomation": "infinite", "ContractGasPrice":"infinite"},
+			"Princing" :{" Gaslimit": "387600", "tokenPrice": "234.56 USD"},
+			"security" : {"signed": "yes", "tested": "yes", "link":"https://mythx.io/", "description" : "MythX is a powerful security analysis service that finds Solidity vulnerabilities in your Ethereum smart contract code during your development life cycle."}
+	},
+	"participants" : {
+		"provider":"",
+		"FutureUserType":"both"
+	},
+	"sc characteristics ":{
+		"documentational characteristics":{ "used compiler":"0.5.2+commit.1df8f40c", 
+		    "usedRessources":"", 
+		    "abi" : "",
+			"deployed byte code" : "",
+			"description" : "wallet contract to send transfer ",
+			"hash":"", 
+			"metadata":""},
+	   "common characteristics":{"type":"Application logic contracts (ALCs)",
+			"category":"static", "updateDate":"","state":"mutable","version":"^0.5.2", "initialBalance ": "0"
+	      ,"creationDate":"10/08/2022", "lifeCycle":"ready"}}},
+
+"technical Perspective":{ "blockhain characteristics ":{ "name":"Ethereum",  "type":"public", "consensus":"proof of stacke","currency":"ETH"},
+"Protocol information":{ "adress":""}
+},
+},
+"operationalPerspective":{
+	"Functions" : [
+	{"name": "sendTransfer",
+	"Type": "external",
+	"scope" : "",
+	"description": "send transfer have onlyApprover modifier",
+	"inputs":[{"name": "id", "Type": "uint" }],
+	"outputs": []
+	}],
+	"Events": [
+	]
+}
+}
