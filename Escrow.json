@@ -1,0 +1,65 @@
+{
+"udl-SC_version" : "1.0", 
+"name" : "Escrow", 
+"creation_date":"2020-06-23",
+"Business Perspective": {
+	"Legal":{ "name": "Ricardian contract" , "type":"Ricardian contract" ,"link":"https://www.barclays.co.uk/", "description" : ""},
+	"QOS":{ "service level": { "latency": "6ms", "gasConsomation": "608829", "ContractGasPrice":"608829"},
+			"Princing" :{" Gaslimit": "80000000", "tokenPrice": "234.56 USD"},
+			"security" : {"signed": "yes", "tested": "yes", "link":"https://blog.openzeppelin.com/augur-core-audit-244160d77c09/", "description" : ""}
+	},
+	"participants" : {
+		"provider":"0xfe1bD11cD131C02f31A8b213651A8358FA1ab7a8",
+		"FutureUserType":"both"
+	},
+	"sc characteristics ":{
+		"documentational characteristics":{ "used compiler":"", 
+		    "usedRessources":"", 
+		    "abi" : "",
+			"deployed byte code" : "",
+			"description" : "",
+			"hash":"", 
+			"metadata":""},
+	    "common characteristics":{"type":"",
+			"category":"", "updateDate":"","state":"","version":"", "initialBalance ": ""
+	      ,"creationDate":"", "lifeCycle":""}}},
+
+"technical Perspective":{ "blockhain characteristics ":{ "name":"Ethereum",  "type":"public", "consensus":"proof of stacke","currency":"ETH"},
+"Protocol information":{ "adress":"0xd8b934580fcE35a11B58C6D73aDeE468a2833fa8"}
+},
+"operationalPerspective":{
+	"Functions" : [
+	{"name": "deposit",
+	"Type": "payable",
+	"scope" : "public ",
+	"description": "stores the sent amount as credit to be withdrawn.",
+	"inputs":[{"name": "payee", "Type": "address " }],
+	"outputs": []
+	},
+	{"name": "withdraw",
+	"Type": "payable",
+	"scope" : "public ",
+	"description": "",
+	"inputs":[{"name": "payee", "Type": "address " }],
+	"outputs": []
+	},
+	{"name": "depositsOf",
+	"Type": "view",
+	"scope" : "public",
+	"description": "",
+	"inputs":[{"name": "payee", "Type": "address " }],
+	"outputs": []
+	}],
+	"Events": [
+	{"name": "Deposited",
+	"Type": "",
+	"description": "",
+	"outputs": [{"name": " payee", "Type": "address ","is_indexed" : true},{"name": "weiAmount", "Type": "uint256","is_indexed" :false}]
+	},
+	{"name": "Withdrawn",
+	"Type": "",
+	"description": "",
+	"outputs": [{"name": " payee", "Type": "address ","is_indexed" : true},{"name": "weiAmount", "Type": "uint256","is_indexed" :false}]
+	}]
+}
+}
