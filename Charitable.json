@@ -1,0 +1,74 @@
+{
+"UDL-SC_version" : "0.1", 
+"name" : "Charitable", 
+"creation_date":"01/10/2022",
+"Business Perspective": {
+	"Legal":{ "name": "Ricardian contract" , "type":"Ricardian contract" ,"link":"https://www.barclays.co.uk/" "description":"Independent service quality survey results"},
+	"QOS":{ "service level": { "latency": "6ms", "gasConsomation": "1173748", "ContractGasPrice":"1173748"},
+			"Princing" :{" Gaslimit": "80000000", "tokenPrice": "234.56 USD"},
+			"security" : {"signed": "yes", "tested": "yes", "link":"https://mariachris.github.io/Pubs/FSE-2020-Harvey.pdf", "description":"A state-of-the-art greybox fuzzer for Ethereum smart contracts. It integrates various novel techniques for finding bugs faster and more reliably."}
+	},
+	"participants" : {
+		"provider":"0xdD870fA1b7C4700F2BD7f44238821C26f7392148",
+		"FutureUserType":"both"
+	},
+	"sc characteristics ":{
+		"documentational characteristics":{ "used compiler":"", 
+		    "usedRessources":"", 
+		    "abi" : "",
+			"deployed byte code" : "",
+			"description" : "",
+			"hash":"", 
+			"metadata":""},
+	    "common characteristics":{"type":"",
+			"category":"", "updateDate":"","state":"","version":"", "initialBalance ": ""
+	      ,"creationDate":"", "lifeCycle":""}}},
+
+"technical Perspective":{ "blockhain characteristics ":{ "name":"Ethereum",  "type":"public", "consensus":"proof of stacke","currency":"ETH"},
+"Protocol information":{ "adress":"0xdD870fA1b7C4700F2BD7f44238821C26f7392148"}
+},
+"operationalPerspective":{
+	"Functions" : [
+	{"name": "deposit",
+	"Type": "",
+	"scope" : "",
+	"description": "",
+	"inputs":[{"name": "destinationAddress", "Type": "address payable " },{"name": "charityIndex", "Type": "uint256" },{"name": "donationAmount", "Type": "uint256" }],
+	"outputs": [{"name": "destinationAddress" , "Type": "Address" }]
+	},
+	{"name": "getAddresses",
+	"Type": "",
+	"scope" : "public",
+	"description": "Returns all the available charity addresses.",
+	"inputs":[],
+	"outputs": [{"name": "memory" , "Type": "address payable[]" }]
+	},
+	{"name": "getTotalDonationsAmount",
+	"Type": "",
+	"scope" : "public",
+	"description": "Returns the total amount raised by all donations (in wei) towards any charity.",
+	"inputs":[],
+	"outputs": [{"name": "" , "Type": "uint256" }]
+	},
+	{"name": "getHighestDonation",
+	"Type": "public",
+	"scope" : "view",
+	"description": "",
+	"inputs":[],
+	"outputs": [{"name": "" , "Type": "uint256" },{"name": "payable" , "Type": " address" }]
+	},
+	{"name": "destroy",
+	"Type": "Returns the address that made the highest donation, along with the amount donated.",
+	"scope" : "public ",
+	"description": "estroys the contract and renders it unusable.",
+	"inputs":[],
+	"outputs": []
+	}],
+	"Events": [
+	{"name": "Donation",
+	"Type": "",
+	"description": "Transmits the address of the donor and the amount donated.",
+	"outputs": [{"name": "donor", "Type": "address","is_indexed" : true},{"name": " _value", "Type": "uint256 ","is_indexed" :false}]
+	}]
+}
+}

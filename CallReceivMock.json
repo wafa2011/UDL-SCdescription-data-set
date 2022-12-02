@@ -1,0 +1,108 @@
+{
+"UDL-SC_version" : "0.1", 
+"name" : "CallReceiverMock", 
+"creation_date":"2020-06-23",
+"Business Perspective": {
+	"Legal":{ "name": "Ricardian contract" , "type":"gouvernemental" ,"link":"https://www.federalreserve.gov/" ,"description" : "Approved by regulator and financial institutions"},
+	"QOS":{ "service level": { "latency": "6ms", "gasConsomation": "186703 ", "ContractGasPrice":"186703 "},
+			"Princing" :{" Gaslimit": "80000000", "tokenPrice": "234.56 USD"},
+			"security" : {"signed": "yes", "tested": "yes", "link":"https://github.com/ConsenSys/aragraph","description" : "A Tool to visualize permission relationships and other details of Aragon DAO’s."}
+	},
+	"participants" : {
+		"provider":"",
+		"FutureUserType":""
+	},
+	"sc characteristics ":{
+		"documentational characteristics":{ "used compiler":"", 
+		    "usedRessources":"", 
+		    "abi" : "",
+			"deployed byte code" : "",
+			"description" : "",
+			"hash":"", 
+			"metadata":""},
+	    "common characteristics":{"type":"",
+			"category":"", "updateDate":"","state":"","version":"", "initialBalance ": ""
+	      ,"creationDate":"", "lifeCycle":""}}},
+
+"technical Perspective":{ "blockhain characteristics ":{ "name":"Ethereum",  "type":"public", "consensus":"proof of stacke","currency":"ETH"},
+"Protocol information":{ "adress":"0x70c063b8A57c1208f0c84ffEbfFEb0C0B22B6715"}
+},
+"operationalPerspective":{
+	"Functions" : [
+	{"name": "mockFunction",
+	"Type": "public",
+	"scope" : "",
+	"description": "mockFunction",
+	"inputs":[{"name": "", "Type": "" }],
+	"outputs": [{"name": "memory" , "Type": "string" }]
+	},
+	
+	{"name": "mockFunctionWithArgs",
+	"Type": "public",
+	"scope" : "",
+	"description": "mockFunctionWithArgs",
+	"inputs":[{"name": "a", "Type": "uint256" },{"name": "b", "Type": "uint256" }],
+	"outputs": [{"name": "memory" , "Type": "string" }]
+
+	},
+	
+	{"name": "mockFunctionNonPayable",
+	"Type": "public",
+	"scope" : "",
+	"description": "mockFunctionNonPayable",
+	"inputs":[{"name": "", "Type": "" }],
+	"outputs": [{"name": "memory" , "Type": "string" }]
+	},
+	
+	{"name": "mockStaticFunction",
+	"Type": "public",
+	"scope" : "",
+	"description": "mockStaticFunction",
+	"inputs":[{"name": "", "Type": "" }],
+	"outputs": [{"name": "memory" , "Type": "string" }]
+	},
+	{"name": "mockFunctionRevertsNoReason",
+	"Type": "public",
+	"scope" : "",
+	"description": "mockFunctionRevertsNoReason",
+	"inputs":[{"name": "", "Type": "" }],
+	"outputs": [{"name": "" , "Type": "" }]
+	},
+	{"name": "mockFunctionRevertsReason",
+	"Type": "public",
+	"scope" : "",
+	"description": "mockFunctionRevertsReason",
+	"inputs":[{"name": "", "Type": "" }],
+	"outputs": [{"name": "" , "Type": "" }]
+	},
+	},
+	{"name": "mockFunctionThrows",
+	"Type": "public",
+	"scope" : "",
+	"description": "mockFunctionThrows",
+	"inputs":[{"name": "", "Type": "" }],
+	"outputs": [{"name": "" , "Type": "" }]
+	},
+	},
+	{"name": "mockFunctionOutOfGas",
+	"Type": "public",
+	"scope" : "",
+	"description": "mockFunctionOutOfGas",
+	"inputs":[{"name": "", "Type": "" }],
+	"outputs": [{"name": "" , "Type": "" }]
+	},
+	{"name": "mockFunctionWritesStorage",
+	"Type": "public",
+	"scope" : "",
+	"description": "mockFunctionWritesStorage",
+	"inputs":[{"name": "", "Type": "" }],
+	"outputs": [{"name": "memory" , "Type": "string" }]
+	}],
+	"Events": [
+	{"name": "",
+	"Type": "",
+	"description": "",
+	"outputs": [{"name": "", "Type": "","is_indexed" : true}]
+	}]
+}
+}

@@ -1,0 +1,54 @@
+{
+"UDL-SC_version" : "0.1", 
+"name" : "ConditionalEscrow", 
+"creation_date":"11/03/2018",
+"Business Perspective": {
+    "Legal":{ "name": "" , "type":"" ,"link":"","description" : ""},
+	"QOS":{ "service level": { "latency": "1ms", "gasConsomation": "1185924  ", "ContractGasPrice":"1185924  "},
+			"Princing" :{" Gaslimit": "266600", "tokenPrice": "234.56 USD"},
+			"security" : {"signed": "", "tested": "", "link":"","description" : ""}
+	},
+	"participants" : {
+		"provider":"",
+		"FutureUserType":""
+	},
+	"sc characteristics ":{
+		"documentational characteristics":{ "used compiler":"", 
+		    "usedRessources":"", 
+		    "abi" : "",
+			"deployed byte code" : "",
+			"description" : "",
+			"hash":"", 
+			"metadata":""},
+	    "common characteristics":{"type":"",
+			"category":"", "updateDate":"","state":"","version":"", "initialBalance ": ""
+	      ,"creationDate":"", "lifeCycle":""}}},
+
+"technical Perspective":{ "blockhain characteristics ":{ "name":"Ethereum",  "type":"public", "consensus":"proof of stacke","currency":"ETH"},
+"Protocol information":{ "adress":"0xd8b934580fcE35a11B58C6D73aDeE468a2833fa8"}
+},
+"operationalPerspective":{
+	
+	"Functions" : [
+	{"name": "withdrawalAllowed",
+	"Type": "public",
+	"scope" : "",
+	"description": "withdrawalAllowed",
+	"inputs":[{"name": "payee", "Type": "address" }],
+	"outputs": [{"name": "" , "Type": "bool" }]
+	},
+	{"name": "withdraw",
+	"Type": "public",
+	"scope" : "",
+	"description": "withdraw",
+	"inputs":[{"name": "payable payee", "Type": "address" }],
+	"outputs": [{"name": "" , "Type": "" }]
+	}],
+	"Events": [
+	{"name": "",
+	"Type": "",
+	"description": "",
+	"outputs": [{"name": "", "Type": "","is_indexed" : true}]
+	}]
+}
+}

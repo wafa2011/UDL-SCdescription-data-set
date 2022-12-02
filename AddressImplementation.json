@@ -1,0 +1,87 @@
+{
+"UDL-SC_version" : "0.1", 
+"name" : "AddressImpl", 
+"creation_date":"2020-06-23",
+"Business Perspective": {
+	"Legal":{ "name": "Ricardian contract" , "type":"Ricardian contract" ,"link":"https://www.barclays.co.uk/", "description" : ""},
+	"QOS":{ "service level": { "latency": "6ms", "gasConsomation": "608829", "ContractGasPrice":"608829"},
+			"Princing" :{" Gaslimit": "80000000", "tokenPrice": "234.56 USD"},
+			"security" : {"signed": "yes", "tested": "yes", "link":"https://blog.openzeppelin.com/augur-core-audit-244160d77c09/", "description" : ""}
+	},
+	"participants" : {
+		"provider":"",
+		"FutureUserType":""
+	},
+	"sc characteristics ":{
+		"documentational characteristics":{ "used compiler":"", 
+		    "usedRessources":"", 
+		    "abi" : "",
+			"deployed byte code" : "",
+			"description" : "",
+			"hash":"", 
+			"metadata":""},
+	    "common characteristics":{"type":"",
+			"category":"", "updateDate":"","state":"","version":"", "initialBalance ": ""
+	      ,"creationDate":"", "lifeCycle":""}}},
+
+"technical Perspective":{ "blockhain characteristics ":{ "name":"Ethereum",  "type":"public", "consensus":"proof of stacke","currency":"ETH"},
+"Protocol information":{ "adress":"0xd8b934580fcE35a11B58C6D73aDeE468a2833fa8"}
+},
+"operationalPerspective":{
+	"Functions" : [
+	
+	
+	{"name": "isContract",
+	"Type": "",
+	"scope" : "",
+	"description": "isContract",
+	"inputs":[{"name": "account", "Type": "adress" }],
+	"outputs": [{"name": "bool" , "Type": "bool" }]
+	},
+	{"name": "sendValue",
+	"Type": "external",
+	"scope" : "public",
+	"description": "sendValue",
+	"inputs":[{"name": "receiver", "Type": "address payable" },{"name": "amount", "Type": "uint256" }],
+	"outputs": [{"name": "" , "Type": "" }]
+	},
+	{"name": "functionCall",
+	"Type": "external",
+	"scope" : "",
+	"description": "functionCall",
+	"inputs":[{"name": "target", "Type": "adress" },{"name": "data", "Type": "bytes calldata" }],
+	"outputs": [{"name": "" , "Type": "" }]
+	},
+	{"name": "functionCallWithValue",
+	"Type": "public",
+	"scope" : "",
+	"description": "functionCallWithValue",
+	"inputs":[{"name": "target", "Type": "adress" },{"name": "data", "Type": "bytes calldata" },{"name": "value", "Type": "uint256" }],
+	"outputs": [{"name": "" , "Type": "" }]
+	},
+	{"name": "functionStaticCall",
+	"Type": "external",
+	"scope" : "public",
+	"description": "functionStaticCall",
+	"inputs":[{"name": "target", "Type": "adress" },{"name": "data", "Type": "bytes calldata" }],
+	"outputs": [{"name": "" , "Type": "" }]
+	},
+	{"name": "functionDelegateCall",
+	"Type": "external",
+	"scope" : "",
+	"description": "functionDelegateCall",
+	"inputs":[{"name": "target", "Type": "adress" },{"name": "data", "Type": "bytes calldata" }],
+	"outputs": [{"name": "" , "Type": "" }]
+	}
+	
+	
+	
+	],
+	"Events": [
+	{"name": "",
+	"Type": "",
+	"description": "",
+	"outputs": [{"name": "", "Type": "","is_indexed" : true}]
+	}]
+}
+}

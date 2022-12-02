@@ -1,0 +1,116 @@
+{
+"UDL-SC_version" : "0.1", 
+"name" : "ContractTest", 
+"creation_date":"11/03/2018",
+"Business Perspective": {
+    "Legal":{ "name": "" , "type":"" ,"link":"","description" : ""},
+	"QOS":{ "service level": { "latency": "1ms", "gasConsomation": "1185924  ", "ContractGasPrice":"1185924  "},
+			"Princing" :{" Gaslimit": "266600", "tokenPrice": "234.56 USD"},
+			"security" : {"signed": "", "tested": "", "link":"","description" : ""}
+	},
+	"participants" : {
+		"provider":"",
+		"FutureUserType":""
+	},
+	"sc characteristics ":{
+		"documentational characteristics":{ "used compiler":"", 
+		    "usedRessources":"", 
+		    "abi" : "",
+			"deployed byte code" : "",
+			"description" : "",
+			"hash":"", 
+			"metadata":""},
+	    "common characteristics":{"type":"",
+			"category":"", "updateDate":"","state":"","version":"", "initialBalance ": ""
+	      ,"creationDate":"", "lifeCycle":""}}},
+
+"technical Perspective":{ "blockhain characteristics ":{ "name":"Ethereum",  "type":"public", "consensus":"proof of stacke","currency":"ETH"},
+"Protocol information":{ "adress":"0xd8b934580fcE35a11B58C6D73aDeE468a2833fa8"}
+},
+"operationalPerspective":{
+	"Functions" : [
+	{"name": "setUp",
+	"Type": "public",
+	"scope" : "",
+	"description": "setUp",
+	"inputs":[{"name": "", "Type": "" }],
+	"outputs": [{"name": "" , "Type": "" }]
+	},
+	{"name": "testFailDoubleQueue",
+	"Type": "public",
+	"scope" : "",
+	"description": "testFailDoubleQueue",
+	"inputs":[{"name": "", "Type": "" }],
+	"outputs": [{"name": "" , "Type": "" }]
+	},
+	{"name": "testFailPastQueue",
+	"Type": "public",
+	"scope" : "",
+	"description": "testFailPastQueue",
+	"inputs":[{"name": "", "Type": "" }],
+	"outputs": [{"name": "" , "Type": "" }]
+	},
+	{"name": "testMintAfterTen",
+	"Type": "public",
+	"scope" : "",
+	"description": "testMintAfterTen",
+	"inputs":[{"name": "", "Type": "" }],
+	"outputs": [{"name": "" , "Type": "" }]
+	},
+	{"name": "testFailMintNow",
+	"Type": "public",
+	"scope" : "",
+	"description": "testFailMintNow",
+	"inputs":[{"name": "", "Type": "" }],
+	"outputs": [{"name": "" , "Type": "" }]
+	},
+	{"name": "testFailMintNonQueued",
+	"Type": "public",
+	"scope" : "",
+	"description": "testFailMintNonQueued",
+	"inputs":[{"name": "", "Type": "" }],
+	"outputs": [{"name": "" , "Type": "" }]
+	},
+	{"name": "testFailDoubleMint",
+	"Type": "public",
+	"scope" : "",
+	"description": "testFailDoubleMint",
+	"inputs":[{"name": "", "Type": "" }],
+	"outputs": [{"name": "" , "Type": "" }]
+	},
+	{"name": "testFailLateMint",
+	"Type": "public",
+	"scope" : "",
+	"description": "testFailLateMint",
+	"inputs":[{"name": "", "Type": "" }],
+	"outputs": [{"name": "" , "Type": "" }]
+	},
+	{"name": "testCancelMint",
+	"Type": "public",
+	"scope" : "",
+	"description": "testCancelMint",
+	"inputs":[{"name": "", "Type": "" }],
+	"outputs": [{"name": "" , "Type": "" }]
+	},
+	{"name": "testFailCancelMint",
+	"Type": "public",
+	"scope" : "",
+	"description": "testFailCancelMint",
+	"inputs":[{"name": "", "Type": "" }],
+	"outputs": [{"name": "" , "Type": "" }]
+	},
+	{"name": "testFailCancelMintNonQueued",
+	"Type": "public",
+	"scope" : "",
+	"description": "testFailCancelMintNonQueued",
+	"inputs":[{"name": "", "Type": "" }],
+	"outputs": [{"name": "" , "Type": "" }]
+	}],
+	"Events": [
+	{"name": "",
+	"Type": "",
+	"description": "",
+	"outputs": [{"name": "", "Type": "","is_indexed" : true}]
+	}]
+}
+}

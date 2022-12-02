@@ -1,0 +1,74 @@
+{
+"UDL-SC_version" : "0.1", 
+"name" : "AccessControlEnumerable", 
+"creation_date":"11/03/2022",
+"Business Perspective": {
+    "Legal":{ "name": "" , "type":"" ,"link":"","description" : ""},
+	"QOS":{ "service level": { "latency": "1ms", "gasConsomation": "", "ContractGasPrice":""},
+			"Princing" :{" Gaslimit": "", "tokenPrice": "234.56 USD"},
+			"security" : {"signed": "", "tested": "", "link":"","description" : ""}
+	},
+	"participants" : {
+		"provider":"",
+		"FutureUserType":""
+	},
+	"sc characteristics ":{
+		"documentational characteristics":{ "used compiler":"", 
+		    "usedRessources":"", 
+		    "abi" : "",
+			"deployed byte code" : "",
+			"description" : "",
+			"hash":"", 
+			"metadata":""},
+	    "common characteristics":{"type":"",
+			"category":"", "updateDate":"","state":"","version":"", "initialBalance ": ""
+	      ,"creationDate":"", "lifeCycle":""}}},
+
+"technical Perspective":{ "blockhain characteristics ":{ "name":"Ethereum",  "type":"public", "consensus":"proof of stacke","currency":"ETH"},
+"Protocol information":{ "adress":"0xd8b934580fcE35a11B58C6D73aDeE468a2833fa8"}
+},
+"operationalPerspective":{
+	"Functions" : [
+	{"name": "supportsInterface",
+	"Type": "public",
+	"scope" : "",
+	"description": "supports Interface",
+	"inputs":[{"name": "interfaceId", "Type": "bytes4" }],
+	"outputs": [{"name": "" , "Type": "" }]
+	},
+	{"name": "getRoleMember",
+	"Type": "public",
+	"scope" : "",
+	"description": "get Role Member",
+	"inputs":[{"name": "role", "Type": "bytes32" },{"name": "index", "Type": "uint256" }],
+	"outputs": [{"name": "account" , "Type": "adress" }]
+	},
+	{"name": "getRoleMemberCount",
+	"Type": "public",
+	"scope" : "",
+	"description": "get Role MemberCount",
+	"inputs":[{"name": "role", "Type": "bytes32" }],
+	"outputs": [{"name": "index" , "Type": "uint256" }]
+	},
+	{"name": "_grantRole",
+	"Type": "internal",
+	"scope" : "",
+	"description": "_grantRole",
+	"inputs":[{"name": "role", "Type": "bytes32" },{"name": "account", "Type": "address" }],
+	"outputs": [{"name": "" , "Type": "" }]
+	},
+	{"name": "_revokeRole",
+	"Type": "internal",
+	"scope" : "",
+	"description": "_revokeRole",
+	"inputs":[{"name": "role", "Type": "bytes32" },{"name": "account", "Type": "address" }],
+	"outputs": [{"name": "" , "Type": "" }]
+	}   ],
+	"Events": [
+	{"name": "",
+	"Type": "",
+	"description": "",
+	"outputs": [{"name": "", "Type": "","is_indexed" : true}]
+	}]
+}
+}

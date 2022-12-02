@@ -1,0 +1,55 @@
+{
+"UDL-SC_version" : "0.1", 
+"name" : "AccessControlEnumerableMock", 
+"creation_date":"11/03/2022",
+"Business Perspective": {
+	"Business Perspective": {
+	"Legal":{ "name": "state" , "type":"gouvernemental" ,"link":"https://www.federalreserve.gov/","description" : "The Federal Reserve System is the central bank of the United States."},
+	"QOS":{ "service level": { "latency": "6ms", "gasConsomation": "1064289 ", "ContractGasPrice":"1064289 "},
+			"Princing" :{" Gaslimit": "80000000 ", "tokenPrice": "234.56 USD"},
+			"security" : {"signed": "yes", "tested": "yes", "link":"https://mariachris.github.io/Pubs/FSE-2020-Harvey.pdf", "description":"A state-of-the-art greybox fuzzer for Ethereum smart contracts. It integrates various novel techniques for finding bugs faster and more reliably."}
+	},
+	"participants" : {
+		"provider":"",
+		"FutureUserType":""
+	},
+	"sc characteristics ":{
+		"documentational characteristics":{ "used compiler":"", 
+		    "usedRessources":"", 
+		    "abi" : "",
+			"deployed byte code" : "",
+			"description" : "",
+			"hash":"", 
+			"metadata":""},
+	    "common characteristics":{"type":"",
+			"category":"", "updateDate":"","state":"","version":"", "initialBalance ": ""
+	      ,"creationDate":"", "lifeCycle":""}}},
+
+"technical Perspective":{ "blockhain characteristics ":{ "name":"Ethereum",  "type":"public", "consensus":"proof of stacke","currency":"ETH"},
+"Protocol information":{ "adress":"0x5B38Da6a701c568545dCfcB03FcB875f56beddC4"}
+},
+"operationalPerspective":{
+	"Functions" : [
+	{"name": "setRoleAdmin",
+	"Type": "",
+	"scope" : "",
+	"description": "setRoleAdmin",
+	"inputs":[{"name": "roleId", "Type": "bytes32" },{"name": "adminRoleId", "Type": "bytes32" } ],
+	"outputs": [{"name": "" , "Type": "" }]
+	},
+	{"name": "senderProtected",
+	"Type": "public",
+	"scope" : "",
+	"description": "senderProtected",
+	"inputs":[{"name": "roleId", "Type": "bytes32"}],
+	"outputs": [{"name": "roleId", "Type": "bytes32"}]
+	}	
+	],
+	"Events": [
+	{"name": "",
+	"Type": "",
+	"description": "",
+	"outputs": [{"name": "", "Type": "","is_indexed" : true}]
+	}]
+}
+}
