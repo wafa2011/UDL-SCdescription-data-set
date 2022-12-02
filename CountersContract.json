@@ -1,0 +1,68 @@
+{
+"UDL-SC_version" : "0.1", 
+"name" : "Counters", 
+"creation_date":"2020-2-15",
+"Business Perspective": {
+	"Legal":{ "name": "Ricardian contract" , "type":"Ricardian contract" ,"link":"https://www.barclays.co.uk/" "description":"Independent service quality survey results"},
+	"QOS":{ "service level": { "latency": "6ms", "gasConsomation": "1173748", "ContractGasPrice":"1173748"},
+			"Princing" :{" Gaslimit": "80000000", "tokenPrice": "234.56 USD"},
+			"security" : {"signed": "yes", "tested": "yes", "link":"https://mariachris.github.io/Pubs/FSE-2020-Harvey.pdf", "description":"A state-of-the-art greybox fuzzer for Ethereum smart contracts. It integrates various novel techniques for finding bugs faster and more reliably."}
+	},
+	"participants" : {
+		"provider":"",
+		"FutureUserType":""
+	},
+	"sc characteristics ":{
+		"documentational characteristics":{ "used compiler":"", 
+		    "usedRessources":"", 
+		    "abi" : "",
+			"deployed byte code" : "",
+			"description" : "",
+			"hash":"", 
+			"metadata":""},
+	    "common characteristics":{"type":"",
+			"category":"", "updateDate":"","state":"","version":"", "initialBalance ": ""
+	      ,"creationDate":"", "lifeCycle":""}}},
+
+"technical Perspective":{ "blockhain characteristics ":{ "name":"Ethereum",  "type":"public", "consensus":"proof of stacke","currency":"ETH"},
+"Protocol information":{ "adress":"0xdD870fA1b7C4700F2BD7f44238821C26f7392148"}
+},
+"operationalPerspective":{
+	"Functions" : [
+	{"name": "current",
+	"Type": "internal",
+	"scope" : "",
+	"description": "current",
+	"inputs":[{"name": "storage counter", "Type": "Counter " }],
+	"outputs": [{"name": "" , "Type": "unit256" }]
+	},
+	{"name": "increment",
+	"Type": "internal",
+	"scope" : "",
+	"description": "increment",
+	"inputs":[{"name": "storage counter", "Type": "Counter " }],
+	"outputs": [{"name": "" , "Type": "" }]
+	},
+	{"name": "decrement",
+	"Type": "internal",
+	"scope" : "",
+	"description": "decrement",
+	"inputs":[{"name": "storage counter", "Type": "Counter " }],
+	"outputs": [{"name": "" , "Type": "" }]
+	},
+	{"name": "reset",
+	"Type": "internal",
+	"scope" : "",
+	"description": "reset",
+	"inputs":[{"name": "storage counter", "Type": "Counter " }],
+	"outputs": [{"name": "" , "Type": "" }]
+	}
+	],
+	"Events": [
+	{"name": "",
+	"Type": "",
+	"description": "",
+	"outputs": [{"name": "", "Type": "","is_indexed" : true}]
+	}]
+}
+}

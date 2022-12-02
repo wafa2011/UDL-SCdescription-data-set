@@ -1,0 +1,75 @@
+{
+"UDL-SC_version" : "0.1", 
+"name" : "Contract", 
+"creation_date":"",
+"creation_date":"11/03/2018",
+"Business Perspective": {
+    "Legal":{ "name": "" , "type":"" ,"link":"","description" : ""},
+	"QOS":{ "service level": { "latency": "1ms", "gasConsomation": "1185924  ", "ContractGasPrice":"1185924  "},
+			"Princing" :{" Gaslimit": "266600", "tokenPrice": "234.56 USD"},
+			"security" : {"signed": "", "tested": "", "link":"","description" : ""}
+	},
+	"participants" : {
+		"provider":"",
+		"FutureUserType":""
+	},
+	"sc characteristics ":{
+		"documentational characteristics":{ "used compiler":"", 
+		    "usedRessources":"", 
+		    "abi" : "",
+			"deployed byte code" : "",
+			"description" : "",
+			"hash":"", 
+			"metadata":""},
+	    "common characteristics":{"type":"",
+			"category":"", "updateDate":"","state":"","version":"", "initialBalance ": ""
+	      ,"creationDate":"", "lifeCycle":""}}},
+
+"technical Perspective":{ "blockhain characteristics ":{ "name":"Ethereum",  "type":"public", "consensus":"proof of stacke","currency":"ETH"},
+"Protocol information":{ "adress":"0xd8b934580fcE35a11B58C6D73aDeE468a2833fa8"}
+},
+"operationalPerspective":{
+	"Functions" : [
+	{"name": "generateTxnHash",
+	"Type": "public",
+	"scope" : "",
+	"description": "generateTxnHash",
+	"inputs":[{"name": "", "Type": "" }],
+	"outputs": [{"name": "" , "Type": "" }]
+	},
+	{"name": "queueMint",
+	"Type": "public",
+	"scope" : "",
+	"description": "queueMint",
+	"inputs":[{"name": "", "Type": "" }],
+	"outputs": [{"name": "" , "Type": "" }]
+	},
+	{"name": "executeMint",
+	"Type": "public",
+	"scope" : "",
+	"description": "executeMint",
+	"inputs":[{"name": "", "Type": "" }],
+	"outputs": [{"name": "" , "Type": "" }]
+	},
+	{"name": "cancelMint",
+	"Type": "public",
+	"scope" : "external",
+	"description": "cancelMint",
+		"inputs":[{"name": "_txnHash", "Type": "bytes32 " }],
+	"outputs": [{"name": "" , "Type": "" }]
+	},
+	{"name": "mint",
+	"Type": "",
+	"scope" : "internal",
+	"description": "mint",
+	"inputs":[{"name": "to", "Type": "address" },{"name": "amount", "Type": "uint256" }], 
+	"outputs": [{"name": "" , "Type": "" }]
+	}],
+	"Events": [
+	{"name": "",
+	"Type": "",
+	"description": "",
+	"outputs": [{"name": "", "Type": "","is_indexed" : true}]
+	}]
+}
+}

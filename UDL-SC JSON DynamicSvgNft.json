@@ -1,0 +1,95 @@
+{
+"UDL-SC_version" : "0.1", 
+"name" : "DynamicSvgNft", 
+"creation_date":"11/03/2022",
+"Business Perspective": {
+    "Legal":{ "name": "" , "type":"" ,"link":"","description" : ""},
+	"QOS":{ "service level": { "latency": "1ms", "gasConsomation": "181561 ", "ContractGasPrice":"181561 "},
+			"Princing" :{" Gaslimit": "266600", "tokenPrice": "234.56 USD"},
+			"security" : {"signed": "", "tested": "", "link":"","description" : ""}
+	},
+	"participants" : {
+		"provider":"",
+		"FutureUserType":""
+	},
+	"sc characteristics ":{
+		"documentational characteristics":{ "used compiler":"", 
+		    "usedRessources":"", 
+		    "abi" : "",
+			"deployed byte code" : "",
+			"description" : "",
+			"hash":"", 
+			"metadata":""},
+	    "common characteristics":{"type":"",
+			"category":"", "updateDate":"","state":"","version":"", "initialBalance ": ""
+	      ,"creationDate":"", "lifeCycle":""}}},
+
+"technical Perspective":{ "blockhain characteristics ":{ "name":"Ethereum",  "type":"public", "consensus":"proof of stacke","currency":"ETH"},
+"Protocol information":{ "adress":"0x0A098Eda01Ce92ff4A4CCb7A4fFFb5A43EBC70DC"}
+},
+"operationalPerspective":{
+	"Functions" : [
+	{"name": "mintNft",
+	"Type": "public",
+	"scope" : "",
+	"description": "mintNft",
+	"inputs":[{"name": "highValue", "Type": "int256 " }],
+	"outputs": [{"name": "" , "Type": "" }]
+	},
+	{"name": "svgToImageURI",
+	"Type": "public",
+	"scope" : "",
+	"description": "svgToImageURI",
+	"inputs":[{"name": "memory svg", "Type": "string " }],
+	"outputs": [{"name": "memory" , "Type": "string " }]
+	},
+	{"name": "_baseURI",
+	"Type": "internal",
+	"scope" : "",
+	"description": "_baseURI",
+	"inputs":[{"name": "", "Type": "" }],
+	"outputs": [{"name": "memory" , "Type": "string " }]
+	},
+	{"name": "tokenURI",
+	"Type": "public",
+	"scope" : "",
+	"description": "tokenURI",
+	"inputs":[{"name": "tokenId", "Type": "uint256 " }],
+	"outputs": [{"name": "memory" , "Type": "string " }]
+	},
+	{"name": "getLowSVG",
+	"Type": "public",
+	"scope" : "",
+	"description": "getLowSVG",
+	"inputs":[{"name": "", "Type": "" }],
+	"outputs": [{"name": "memory" , "Type": "string " }]
+	},
+	{"name": "getHighSVG",
+	"Type": "public",
+	"scope" : "",
+	"description": "getHighSVG",
+	"inputs":[{"name": "", "Type": "" }],
+	"outputs": [{"name": "memory" , "Type": "string " }]
+	},
+	{"name": "getPriceFeed",
+	"Type": "public",
+	"scope" : "",
+	"description": "getPriceFeed",
+	"inputs":[{"name": "", "Type": "" }],
+	"outputs": [{"name": "" , "Type": "AggregatorV3Interface" }]
+	},
+	{"name": "getTokenCounter",
+	"Type": "public",
+	"scope" : "",
+	"description": "getTokenCounter",
+	"inputs":[{"name": "", "Type": "" }],
+	"outputs": [{"name": "" , "Type": "uint256" }]
+	}],
+	"Events": [
+	{"name": "",
+	"Type": "",
+	"description": "",
+	"outputs": [{"name": "", "Type": "","is_indexed" : true}]
+	}]
+}
+}

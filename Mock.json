@@ -1,0 +1,69 @@
+{
+"UDL-SC_version" : "0.1", 
+"name" : "BitmapMaps", 
+"creation_date":"2020-06-23",
+"Business Perspective": {
+	"Legal":{ "name": "Ricardian contract" , "type":"gouvernemental" ,"link":"https://www.federalreserve.gov/" ,"description" : "Approved by regulator and financial institutions"},
+	"QOS":{ "service level": { "latency": "6ms", "gasConsomation": "186703 ", "ContractGasPrice":"186703 "},
+			"Princing" :{" Gaslimit": "80000000", "tokenPrice": "234.56 USD"},
+			"security" : {"signed": "yes", "tested": "yes", "link":"https://github.com/ConsenSys/aragraph","description" : "A Tool to visualize permission relationships and other details of Aragon DAO’s."}
+	},
+	"participants" : {
+		"provider":"",
+		"FutureUserType":""
+	},
+	"sc characteristics ":{
+		"documentational characteristics":{ "used compiler":"", 
+		    "usedRessources":"", 
+		    "abi" : "",
+			"deployed byte code" : "",
+			"description" : "",
+			"hash":"", 
+			"metadata":""},
+	    "common characteristics":{"type":"",
+			"category":"", "updateDate":"","state":"","version":"", "initialBalance ": ""
+	      ,"creationDate":"", "lifeCycle":""}}},
+
+"technical Perspective":{ "blockhain characteristics ":{ "name":"Ethereum",  "type":"public", "consensus":"proof of stacke","currency":"ETH"},
+"Protocol information":{ "adress":"0x70c063b8A57c1208f0c84ffEbfFEb0C0B22B6715"}
+},
+"operationalPerspective":{
+	"Functions" : [
+	{"name": "get",
+	"Type": "public",
+	"scope" : "",
+	"description": "get",
+	"inputs":[{"name": "index", "Type": "uint256" }],
+	"outputs": [{"name": "" , "Type": "bool" }]
+	},
+	
+	{"name": "setTo",
+	"Type": "public",
+	"scope" : "",
+	"description": "SetTo",
+	"inputs":[{"name": "index", "Type": "uint256"},{"name": "value", "Type": "bool" }],
+	"outputs": [{"name": "" , "Type": "" }]
+	},
+	
+	{"name": "set",
+	"Type": "public",
+	"scope" : "",
+	"description": "set",
+	"inputs":[{"name": "index", "Type": "uint256"}],
+	"outputs": [{"name": "" , "Type": "" }]
+	},
+	{"name": "unset",
+	"Type": "public",
+	"scope" : "",
+	"description": "unset",
+	"inputs":[{"name": "index", "Type": "uint256"}],
+	"outputs": [{"name": "" , "Type": "" }]
+	}],
+	"Events": [
+	{"name": "",
+	"Type": "",
+	"description": "",
+	"outputs": [{"name": "", "Type": "","is_indexed" : true}]
+	}]
+}
+}

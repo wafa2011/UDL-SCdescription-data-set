@@ -1,0 +1,65 @@
+{
+"UDL-SC_version" : "0.1", 
+"name" : "BeaconProxy", 
+"creation_date":"2020-06-23",
+"Business Perspective": {
+	"Legal":{ "name": "Ricardian contract" , "type":"gouvernemental" ,"link":"https://www.federalreserve.gov/" ,"description" : "Approved by regulator and financial institutions"},
+	"QOS":{ "service level": { "latency": "6ms", "gasConsomation": "186703 ", "ContractGasPrice":"186703 "},
+			"Princing" :{" Gaslimit": "80000000", "tokenPrice": "234.56 USD"},
+			"security" : {"signed": "yes", "tested": "yes", "link":"https://github.com/ConsenSys/aragraph","description" : "A Tool to visualize permission relationships and other details of Aragon DAO’s."}
+	},
+	"participants" : {
+		"provider":"",
+		"FutureUserType":""
+	},
+	"sc characteristics ":{
+		"documentational characteristics":{ "used compiler":"", 
+		    "usedRessources":"", 
+		    "abi" : "",
+			"deployed byte code" : "",
+			"description" : "",
+			"hash":"", 
+			"metadata":""},
+	    "common characteristics":{"type":"",
+			"category":"", "updateDate":"","state":"","version":"", "initialBalance ": ""
+	      ,"creationDate":"", "lifeCycle":""}}},
+
+"technical Perspective":{ "blockhain characteristics ":{ "name":"Ethereum",  "type":"public", "consensus":"proof of stacke","currency":"ETH"},
+"Protocol information":{ "adress":"0x70c063b8A57c1208f0c84ffEbfFEb0C0B22B6715"}
+},
+"operationalPerspective":{
+	"Functions" : [
+		
+	{"name": "_beacon",
+	"Type": "public",
+	"scope" : "",
+	"description": "_beacon",
+	"inputs":[{"name": "", "Type": "" }],
+	"outputs": [{"name": "" , "Type": "address" }]
+	},
+	
+	{"name": "_implementation",
+	"Type": "public",
+	"scope" : "",
+	"description": "_implementation",
+	"inputs":[{"name": "", "Type": "" }],
+	"outputs": [{"name": "" , "Type": "address" }]
+	},
+	
+	{"name": "_setBeacon",
+	"Type": "internal",
+	"scope" : "",
+	"description": "_setBeacon",
+	"inputs":[{"name": "beacon", "Type": "address" },{"name": "data", "Type": "bytes memory" }],
+	"outputs": [{"name": "" , "Type": "" }]
+	}
+	
+	],
+	"Events": [
+	{"name": "",
+	"Type": "",
+	"description": "",
+	"outputs": [{"name": "", "Type": "","is_indexed" : true}]
+	}]
+}
+}

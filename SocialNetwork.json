@@ -1,0 +1,112 @@
+{
+"UDL-SC_version" : "0.1", 
+"name" : "twitterContract", 
+"creation_date":"2020-2-15",
+"Business Perspective": {
+	"Legal":{ "name": "Ricardian contract" , "type":"Ricardian contract" ,"link":"https://www.barclays.co.uk/" "description":"Independent service quality survey results"},
+	"QOS":{ "service level": { "latency": "6ms", "gasConsomation": "1173748", "ContractGasPrice":"1173748"},
+			"Princing" :{" Gaslimit": "80000000", "tokenPrice": "234.56 USD"},
+			"security" : {"signed": "yes", "tested": "yes", "link":"https://mariachris.github.io/Pubs/FSE-2020-Harvey.pdf", "description":"A state-of-the-art greybox fuzzer for Ethereum smart contracts. It integrates various novel techniques for finding bugs faster and more reliably."}
+	},
+	"participants" : {
+		"provider":"0xdD870fA1b7C4700F2BD7f44238821C26f7392148",
+		"FutureUserType":"both"
+	},
+	"sc characteristics ":{
+		"documentational characteristics":{ "used compiler":"", 
+		    "usedRessources":"", 
+		    "abi" : "",
+			"deployed byte code" : "",
+			"description" : "",
+			"hash":"", 
+			"metadata":""},
+	    "common characteristics":{"type":"",
+			"category":"", "updateDate":"","state":"","version":"", "initialBalance ": ""
+	      ,"creationDate":"", "lifeCycle":""}}},
+
+"technical Perspective":{ "blockhain characteristics ":{ "name":"Ethereum",  "type":"public", "consensus":"proof of stacke","currency":"ETH"},
+"Protocol information":{ "adress":"0xdD870fA1b7C4700F2BD7f44238821C26f7392148"}
+},
+"operationalPerspective":{
+	"Functions" : [
+	{"name": "tweet",
+	"Type": "",
+	"scope" : "external",
+	"description": "allow creating a tweet and return the tweet and its sender ",
+	"inputs":[{"name": "_content", "Type": "string" }],
+	"outputs": []
+	},
+	{"name": "tweetFrom",
+	"Type": "",
+	"scope" : "external",
+	"description": "knowing the origin of a tweet, from any adress it came",
+	"inputs":[{"name": "from", "Type": "address" },{"name": "_content", "Type": "string" }],
+	"outputs": []
+	},
+	{"name": "sendMessage",
+	"Type": "",
+	"scope" : "external",
+	"description": "send message to a node",
+	"inputs":[{"name": "to", "Type": "address" },{"name": "_content", "Type": "string" }],
+	"outputs": []
+	},
+	{"name": "sendMessageFrom",
+	"Type": "",
+	"scope" : "external",
+	"description": "send message from a node to another",
+	"inputs":[{"name": "from", "Type": "address" },{"name": "to", "Type": "address" },{"name": "_content", "Type": "string" }],
+	"outputs": []
+	},
+	{"name": "follow",
+	"Type": "",
+	"scope" : "external",
+	"description": "allows to pushing an adress(fllower) to the fllowing[] array",
+	"inputs":[{"name": "_followed", "Type": "address" }],
+	"outputs": []
+	},
+	{"name": "getLatestTweets",
+	"Type": "view",
+	"scope" : "external",
+	"description": "returning an array of latest tweets for an account",
+	"inputs":[{"name": "count", "Type": "uint" }],
+	"outputs": [{"name": "" , "Type": "Tweet[]" }]
+	},
+	{"name": "getTweetsOf",
+	"Type": "external",
+	"scope" : "view",
+	"description": "get tweets[] array of an user using it's address ",
+	"inputs":[{"name": "_user", "Type": "address" },{"name": "count", "Type": "uint" }],
+	"outputs": [{"name": "" , "Type": "Tweet[]" }]
+	},
+	{"name": " _tweet",
+	"Type": "external",
+	"scope" : "",
+	"description": "allows sending tweet only by msg.sender",
+	"inputs":[{"name": "from", "Type": "address" },{"name": "_content", "Type": "string" }],
+	"outputs": []
+	},
+	{"name": "_sendMessage",
+	"Type": "external",
+	"scope" : "",
+	"description": "allows sending msg only by msg.sender",
+	"inputs":[{"name": "from", "Type": "address" },{"name": "to", "Type": "address" },{"name": "_content", "Type": "string" }],
+    "outputs": [{"name": "" , "Type": "" }]
+	}],
+	"Events": [
+	{"name": "TweetSent",
+	"Type": "custom",
+	"description": "emitted when a tweet is sent successfully ",
+	"outputs": [{"name": "id", "Type": "uint","is_indexed" : false },
+	{"name": "author", "Type": "address","is_indexed" : true },
+	{"name": "content", "Type": "string","is_indexed" :false },
+	{"name": "createdAt", "Type": "uint","is_indexed" :false }]
+	},
+	{"name": "MessageSent",
+	"Type": "custom",
+	"description": "emitted when a message is sent successfully",
+	"outputs": [{"name": "id", "Type": "uint","is_indexed" : false },
+	{"name": "content", "Type": "string","is_indexed" :false },
+	{"name": "from", "Type": "address","is_indexed" :true },
+	{"name": "to", "Type": "address","is_indexed" :true },
+	{"name": "createdAt", "Type": "uint","is_indexed" :false }]
+}]

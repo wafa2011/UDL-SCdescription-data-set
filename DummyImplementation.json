@@ -1,0 +1,109 @@
+{
+"UDL-SC_version" : "0.1", 
+"name" : "DummyImplementation", 
+"creation_date":"11/03/2022",
+"Business Perspective": {
+    "Legal":{ "name": "" , "type":"" ,"link":"","description" : ""},
+	"QOS":{ "service level": { "latency": "1ms", "gasConsomation": "181561 ", "ContractGasPrice":"181561 "},
+			"Princing" :{" Gaslimit": "266600", "tokenPrice": "234.56 USD"},
+			"security" : {"signed": "", "tested": "", "link":"","description" : ""}
+	},
+	"participants" : {
+		"provider":"",
+		"FutureUserType":""
+	},
+	"sc characteristics ":{
+		"documentational characteristics":{ "used compiler":"", 
+		    "usedRessources":"", 
+		    "abi" : "",
+			"deployed byte code" : "",
+			"description" : "",
+			"hash":"", 
+			"metadata":""},
+	    "common characteristics":{"type":"",
+			"category":"", "updateDate":"","state":"","version":"", "initialBalance ": ""
+	      ,"creationDate":"", "lifeCycle":""}}},
+
+"technical Perspective":{ "blockhain characteristics ":{ "name":"Ethereum",  "type":"public", "consensus":"proof of stacke","currency":"ETH"},
+"Protocol information":{ "adress":"0x0A098Eda01Ce92ff4A4CCb7A4fFFb5A43EBC70DC"}
+},
+"operationalPerspective":{
+	"Functions" : [
+	{"name": "initializeNonPayable",
+	"Type": "public",
+	"scope" : "",
+	"description": "initializeNonPayable",
+	"inputs":[{"name": "", "Type": "" }],
+	"outputs": [{"name": "" , "Type": "" }]
+	},
+	{"name": "initializePayable",
+	"Type": "public",
+	"scope" : "",
+	"description": "initializePayable",
+	"inputs":[{"name": "", "Type": "" }],
+	"outputs": [{"name": "" , "Type": "" }]
+	},
+	{"name": "initializeNonPayableWithValue",
+	"Type": "public",
+	"scope" : "",
+	"description": "initializeNonPayableWithValue",
+	"inputs":[{"name": "_value", "Type": "uint256 " }],
+	"outputs": [{"name": "" , "Type": "" }]
+	},
+	{"name": "initializePayableWithValue",
+	"Type": "public",
+	"scope" : "",
+	"description": "",
+	"inputs":[{"name": "_value", "Type": "uint256 " }],
+	"outputs": [{"name": "" , "Type": "" }]
+	},
+	{"name": "initialize",
+	"Type": "public",
+	"scope" : "",
+	"description": "initialize",
+	"inputs":[{"name": "", "Type": "" }],
+	"outputs": [{"name": "" , "Type": "" }]
+	},
+	{"name": "get",
+	"Type": "public",
+	"scope" : "",
+	"description": "get",
+	"inputs":[{"name": "", "Type": "" }],
+	"outputs": [{"name": "" , "Type": "bool" }]
+	},
+	{"name": "version",
+	"Type": "public",
+	"scope" : "",
+	"description": "version",
+	"inputs":[{"name": "", "Type": "" }],
+	"outputs": [{"name": "memory" , "Type": "string" }]
+	},
+	{"name": "reverts",
+	"Type": "public",
+	"scope" : "",
+	"description": "reverts",
+	"inputs":[{"name": "", "Type": "" }],
+	"outputs": [{"name": "" , "Type": "" }]
+	},
+	{"name": "migrate",
+	"Type": "public",
+	"scope" : "",
+	"description": "migrate",
+	"inputs":[{"name": "newVal", "Type": "uint256 " }],
+	"outputs": [{"name": "" , "Type": "" }]
+	},
+	{"name": "version",
+	"Type": "public",
+	"scope" : "",
+	"description": "version",
+	"inputs":[{"name": "", "Type": "" }],
+	"outputs": [{"name": "memory" , "Type": "string" }]
+	}],
+	"Events": [
+	{"name": "",
+	"Type": "",
+	"description": "",
+	"outputs": [{"name": "", "Type": "","is_indexed" : true}]
+	}]
+}
+}

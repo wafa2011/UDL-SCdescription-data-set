@@ -1,0 +1,46 @@
+{
+"UDL-SC_version" : "0.1", 
+"name" : "Base64", 
+"creation_date":"2020-06-23",
+"Business Perspective": {
+	"Legal":{ "name": "Ricardian contract" , "type":"Ricardian contract" ,"link":"https://www.barclays.co.uk/" "description":"Independent service quality survey results"},
+	"QOS":{ "service level": { "latency": "6ms", "gasConsomation": "1173748", "ContractGasPrice":"1173748"},
+			"Princing" :{" Gaslimit": "80000000", "tokenPrice": "234.56 USD"},
+			"security" : {"signed": "yes", "tested": "yes", "link":"https://swcregistry.io/","description" : "The Smart Contract Weakness Classification Registry is an implementation of the weakness classification scheme proposed in EIP-1470. It is loosely aligned to the terminologies and structure used in the Common Weakness Enumeration (CWE) while overlaying a wide range of weakness variants that are specific to smart contracts."}
+	},
+	"participants" : {
+		"provider":"",
+		"FutureUserType":""
+	},
+	"sc characteristics ":{
+		"documentational characteristics":{ "used compiler":"", 
+		    "usedRessources":"", 
+		    "abi" : "",
+			"deployed byte code" : "",
+			"description" : "",
+			"hash":"", 
+			"metadata":""},
+	    "common characteristics":{"type":"",
+			"category":"", "updateDate":"","state":"","version":"", "initialBalance ": ""
+	      ,"creationDate":"", "lifeCycle":""}}},
+
+"technical Perspective":{ "blockhain characteristics ":{ "name":"Ethereum",  "type":"public", "consensus":"proof of stacke","currency":"ETH"},
+"Protocol information":{ "adress":"0x5B38Da6a701c568545dCfcB03FcB875f56beddC4"}
+},
+"operationalPerspective":{
+	"Functions" : [
+	{"name": "encode",
+	"Type": "internal",
+	"scope" : "",
+	"description": "encode",
+	"inputs":[{"name": "data", "Type": "bytes memory" }],
+	"outputs": [{"name": "memory" , "Type": "string" }]
+	}],
+	"Events": [
+	{"name": "",
+	"Type": "",
+	"description": "",
+	"outputs": [{"name": "", "Type": "","is_indexed" : true}]
+	}]
+}
+}

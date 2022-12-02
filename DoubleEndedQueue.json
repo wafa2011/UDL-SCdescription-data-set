@@ -1,0 +1,109 @@
+{
+"UDL-SC_version" : "0.1", 
+"name" : "DoubleEndedQueue", 
+"creation_date":"11/03/2022",
+"Business Perspective": {
+    "Legal":{ "name": "" , "type":"" ,"link":"","description" : ""},
+	"QOS":{ "service level": { "latency": "1ms", "gasConsomation": "181561 ", "ContractGasPrice":"181561 "},
+			"Princing" :{" Gaslimit": "266600", "tokenPrice": "234.56 USD"},
+			"security" : {"signed": "", "tested": "", "link":"","description" : ""}
+	},
+	"participants" : {
+		"provider":"",
+		"FutureUserType":""
+	},
+	"sc characteristics ":{
+		"documentational characteristics":{ "used compiler":"", 
+		    "usedRessources":"", 
+		    "abi" : "",
+			"deployed byte code" : "",
+			"description" : "",
+			"hash":"", 
+			"metadata":""},
+	    "common characteristics":{"type":"",
+			"category":"", "updateDate":"","state":"","version":"", "initialBalance ": ""
+	      ,"creationDate":"", "lifeCycle":""}}},
+
+"technical Perspective":{ "blockhain characteristics ":{ "name":"Ethereum",  "type":"public", "consensus":"proof of stacke","currency":"ETH"},
+"Protocol information":{ "adress":"0x0A098Eda01Ce92ff4A4CCb7A4fFFb5A43EBC70DC"}
+},
+"operationalPerspective":{
+	"Functions" : [
+	{"name": "pushBack",
+	"Type": "",
+	"scope" : "internal",
+	"description": "pushBack",
+	"inputs":[{"name": "storage deque", "Type": "Bytes32Deque" },{"name": "value", "Type": "bytes32" }],
+	"outputs": [{"name": "" , "Type": "" }]
+	},
+	{"name": "popBack",
+	"Type": "internal",
+	"scope" : "",
+	"description": "popBack",
+	"inputs":[{"name": "storage deque", "Type": "Bytes32Deque" }],
+	"outputs": [{"name": "value" , "Type": "bytes32" }]
+	},
+	{"name": "pushFront",
+	"Type": "",
+	"scope" : "internal",
+	"description": "pushFront",
+	"inputs":[{"name": "storage deque", "Type": "Bytes32Deque" },{"name": "value", "Type": "bytes32" }],
+	"outputs": [{"name": "" , "Type": "" }]
+	},
+	{"name": "popFront",
+	"Type": "",
+	"scope" : "internal",
+	"description": "popFront",
+	"inputs":[{"name": "storage deque", "Type": "Bytes32Deque" }],
+	"outputs": [{"name": "value" , "Type": "bytes32" }]
+	},
+	{"name": "front",
+	"Type": "",
+	"scope" : "internal",
+	"description": "front",
+		"inputs":[{"name": "storage deque", "Type": "Bytes32Deque" }],
+	"outputs": [{"name": "value" , "Type": "bytes32" }]
+	},
+	{"name": "back",
+	"Type": "",
+	"scope" : "internal",
+	"description": "back",
+		"inputs":[{"name": "storage deque", "Type": "Bytes32Deque" }],
+	"outputs": [{"name": "value" , "Type": "bytes32" }]
+	},
+	{"name": "at",
+	"Type": "",
+	"scope" : "internal",
+	"description": "at",
+	"inputs":[{"name": "storage deque", "Type": "Bytes32Deque" },{"name": "index", "Type": "uint256" }],
+	"outputs": [{"name": "value" , "Type": "bytes32" }]
+	},
+	{"name": "clear",
+	"Type": "",
+	"scope" : "internal",
+	"description": "clear",
+	"inputs":[{"name": "storage deque", "Type": "Bytes32Deque" }],
+	"outputs": [{"name": "value" , "Type": "bytes32" }]
+	},
+	{"name": "length",
+	"Type": "",
+	"scope" : "internal",
+	"description": "length",
+	"inputs":[{"name": "storage deque", "Type": "Bytes32Deque" }],
+	"outputs": [{"name": "" , "Type": "unit256" }]
+	},
+	{"name": "empty",
+	"Type": "",
+	"scope" : "internal",
+	"description": "empty",
+	"inputs":[{"name": "storage deque", "Type": "Bytes32Deque" }],
+	"outputs": [{"name": "" , "Type": "bool" }]
+	}],
+	"Events": [
+	{"name": "",
+	"Type": "",
+	"description": "",
+	"outputs": [{"name": "", "Type": "","is_indexed" : true}]
+	}]
+}
+}
