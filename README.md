@@ -1,6 +1,6 @@
 
 # UDL-SCdescription-data-set
-Data set of 400 JSON smart contract description file generated based on the UDL-SC description metamodel. 
+Data set of 400 JSON smart contract description file generated based on the UDL-SC description metamodel generated automaticly badsed on the MDA approach and using the JAVA description generator : https://github.com/wafa2011/Smart-Contract-description-generator- .
 # Composition 
 We assume that we have eight smart contract categories ['Rent',' Bank ',' Sale',' 'Copyright',' NFT',' Voting',' Math',' Financial ']. 
 The inserted data from the "UDL-SCdescriptions" data set has been indexed based on the "category" attribute. 
